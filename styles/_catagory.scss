@@ -1,50 +1,46 @@
 @use "variables";
 
 .catagory {
-  .content-container {
-    max-width: min(90%, 1260px);
-    padding: 0 15px;
-    margin: 0 auto;
+  margin: 0 auto;
+  @include content-container;
+  .title-catagory-block {
+    height: 131px;
+    border-bottom: 1px solid variables.$first-color;
+    display: flex;
+    align-items: center;
 
-    .title-catagory-block {
-      height: 131px;
-      border-bottom: 1px solid variables.$first-color;
-      display: flex;
-      align-items: center;
+    h2 {
+      color: variables.$first-color;
+      font-family: variables.$second-font;
+      font-size: clamp(38px, 5vw, 56px);
+      font-weight: 600;
+      line-height: 120%;
 
-      h2 {
-        color: variables.$first-color;
-        font-family: variables.$second-font;
-        font-size: clamp(38px, 5vw, 56px);
-        font-weight: 600;
-        line-height: 120%;
-
-        span {
-          color: variables.$second-color;
-        }
+      span {
+        color: variables.$second-color;
       }
     }
+  }
 
-    .img-catagory-block {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
-      gap: 22px 22px;
-      margin-bottom: 149.5px;
-      margin-top: 52px;
+  .img-catagory-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+    gap: 22px 22px;
+    margin-bottom: 149.5px;
+    margin-top: 52px;
 
-      div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
 
-        h3 {
-          color: variables.$third-color;
-          font-family: variables.$first-font;
-          font-size: 16px;
-          font-weight: 700;
-          letter-spacing: 3.2px;
-        }
+      h3 {
+        color: variables.$third-color;
+        font-family: variables.$first-font;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 3.2px;
       }
     }
   }

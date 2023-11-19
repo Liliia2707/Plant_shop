@@ -1,76 +1,74 @@
 @use "variables";
 
 .selling {
-  .content-container {
-    max-width: min(90%, 1260px);
-    padding: 0 15px;
-    margin: 0 auto;
+  @include content-container;
 
-    .title-selling-block {
-      height: 131px;
-      border-bottom: 1px solid variables.$first-color;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  .title-selling-block {
+    height: 131px;
+    border-bottom: 1px solid variables.$first-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 
-      h2 {
-        color: variables.$first-color;
-        font-family: variables.$second-font;
-        font-size: clamp(38px, 5vw, 56px);
-        font-weight: 600;
-        line-height: 120%;
+    h2 {
+      color: variables.$first-color;
+      font-family: variables.$second-font;
+      font-size: clamp(38px, 5vw, 56px);
+      font-weight: 600;
+      line-height: 120%;
 
-        span {
-          color: variables.$second-color;
-        }
-      }
-
-      p {
-        color: variables.$first-color;
-        font-family: variables.$second-font;
-        font-size: clamp(18px, 5vw, 30px);
-        font-weight: 400;
-        line-height: 21.7px;
-        text-transform: uppercase;
-        cursor: pointer;
+      span {
+        color: variables.$second-color;
       }
     }
 
-    .img-selling-block {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
-      gap: 24px 24px;
-      margin-bottom: 149.5px;
-      margin-top: 70px;
-      padding: 0 14px;
+    p {
+      color: variables.$first-color;
+      font-family: variables.$second-font;
+      font-size: clamp(18px, 5vw, 30px);
+      font-weight: 400;
+      line-height: 21.7px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
 
-      div {
-        max-width: 384px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        border-radius: 16px;
-        gap: 16px;
-        box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  .img-selling-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 384px), 1fr));
+    gap: 24px 24px;
+    margin-bottom: 149.5px;
+    margin-top: 70px;
+    padding: 0 14px;
 
-        img {
-          max-width: 329px;
-          height: 100%;
-        }
+    div {
+      max-width: 384px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-radius: 16px;
+      gap: 16px;
+      box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+      margin: auto;
 
-        button {
-          padding: 18px 116px;
-          border-radius: 8px;
-          background: variables.$second-color;
-          box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-          border: none;
-          color: #fff;
-          font-family: Open Sans;
-          font-size: 20px;
-          font-weight: 700;
-          cursor: pointer;
-        }
+      img {
+        max-width: 329px;
+        height: 100%;
+      }
+
+      button {
+        padding: 18px 116px;
+        border-radius: 8px;
+        background: variables.$second-color;
+        box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+        border: none;
+        color: #fff;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
       }
     }
   }

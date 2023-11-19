@@ -2,7 +2,7 @@
 
 header {
   .top-block {
-    @include content-container;
+    @include variables.content-container;
     height: 45px;
     background-color: variables.$second-color;
     display: flex;

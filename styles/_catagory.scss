@@ -2,7 +2,7 @@
 
 .catagory {
   margin: 0 auto;
-  @include content-container;
+  @include variables.content-container;
   .title-catagory-block {
     height: 131px;
     border-bottom: 1px solid variables.$first-color;

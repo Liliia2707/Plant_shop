@@ -1,0 +1,66 @@
+@use "variables";
+
+main {
+  height: 740px;
+  background-color: variables.$second-color;
+  margin-bottom: 111px;
+
+  .background {
+    min-height: 690px;
+    width: 100%;
+    margin: 0;
+    background-image: url("../media/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-block {
+      max-width: min(55%, 570px);
+      background: rgba(80, 128, 107, 0.2);
+      backdrop-filter: blur(20px);
+      height: 690px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: variables.$first-color;
+      text-align: center;
+      font-family: variables.$second-font;
+
+      h1 {
+        font-size: clamp(42px, 10vw, 80px);
+        font-weight: 600;
+        line-height: 80px;
+        letter-spacing: 2.4px;
+        margin-bottom: 50px;
+        padding: 0 36px;
+      }
+
+      p {
+        max-width: min(90%, 420px);
+        font-size: clamp(18px, 3vw, 22px);
+        font-weight: 400;
+        margin-bottom: 60px;
+      }
+
+      button {
+        padding: clamp(12px, 2vw, 24px) clamp(28px, 4vw, 56px);
+        color: variables.$first-color;
+        text-align: center;
+        font-family: variables.$first-font;
+        font-size: clamp(16px, 2vw, 22px);
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: -0.4px;
+        text-transform: uppercase;
+        border-radius: 20px;
+        background: variables.$fourth-color;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

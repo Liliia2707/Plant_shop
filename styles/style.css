@@ -7,20 +7,17 @@
 }
 
 header .top-block {
-  height: 45px;
-  background-color: #50806b;
-}
-header .top-block .content-container {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
+  height: 45px;
+  background-color: #50806b;
   display: flex;
   justify-content: end;
   align-items: center;
-  height: 100%;
 }
-header .top-block .content-container p,
-header .top-block .content-container .paragraph-block {
+header .top-block p,
+header .top-block .paragraph-block {
   color: #ffffff;
   font-family: Open Sans;
   font-size: clamp(11px, 2vw, 16px);
@@ -28,52 +25,50 @@ header .top-block .content-container .paragraph-block {
   cursor: pointer;
   gap: 23px;
 }
-header .top-block .content-container p {
+header .top-block p {
   font-weight: 600;
   flex: 1 content;
   text-align: center;
   padding-left: 10%;
 }
-header .top-block .content-container .paragraph-block {
+header .top-block .paragraph-block {
   display: flex;
   padding-right: 2%;
 }
-header .top-block .content-container .paragraph-block p:first-child {
+header .top-block .paragraph-block p:first-child {
   font-weight: 400;
 }
-header .top-block .content-container .paragraph-block p:last-child {
+header .top-block .paragraph-block p:last-child {
   font-weight: 700;
 }
-header .bottom-block {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
-  position: relative;
-  height: 61px;
-}
-header .bottom-block .content-container {
+
+.bottom-block {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
-  height: 100%;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  height: 61px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   letter-spacing: -0.6px;
   font-family: Open Sans;
 }
-header .bottom-block .content-container .logo-block {
+.bottom-block .logo-block {
   font-size: clamp(18px, 2vw, 26px);
   font-weight: 600;
   color: #000000;
 }
-header .bottom-block .content-container .logo-block span {
+.bottom-block .logo-block span {
   color: #50806b;
 }
-header .bottom-block .content-container nav {
+.bottom-block nav {
   color: #000000;
   font-size: clamp(14px, 2vw, 17px);
   font-weight: 400;
 }
-header .bottom-block .content-container nav ul {
+.bottom-block nav ul {
   display: flex;
   justify-content: space-between;
   gap: clamp(1rem, 5vw, 6rem);
@@ -82,7 +77,7 @@ header .bottom-block .content-container nav ul {
   cursor: pointer;
 }
 @media (max-width: 780px) {
-  header .bottom-block .content-container nav ul {
+  .bottom-block nav ul {
     flex-direction: column;
     align-items: start;
     gap: 1rem;
@@ -92,29 +87,29 @@ header .bottom-block .content-container nav ul {
     z-index: 1;
   }
 }
-header .bottom-block .content-container .right-block {
+.bottom-block .right-block {
   display: flex;
   justify-content: space-between;
 }
-header .bottom-block .content-container .right-block .search-block {
+.bottom-block .right-block .search-block {
   display: flex;
   align-items: center;
 }
-header .bottom-block .content-container .right-block .search-block input {
+.bottom-block .right-block .search-block input {
   border: none;
   max-width: 67px;
   color: #979797;
   font-size: clamp(14px, 1vw, 17px);
   font-weight: 400;
 }
-header .bottom-block .content-container .right-block .search-block button {
+.bottom-block .right-block .search-block button {
   max-width: 22px;
   height: 22px;
   border: none;
   background: #ffffff;
   cursor: pointer;
 }
-header .bottom-block .content-container .right-block .search-block::after {
+.bottom-block .right-block .search-block::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -122,7 +117,7 @@ header .bottom-block .content-container .right-block .search-block::after {
   background-color: #979797;
   margin: 0 clamp(10px, 2vw, 26px);
 }
-header .bottom-block .content-container .right-block .basket-block {
+.bottom-block .right-block .basket-block {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -195,42 +190,40 @@ main .background .text-block button {
 
 .catagory {
   margin: 0 auto;
-}
-.catagory .content-container {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
 }
-.catagory .content-container .title-catagory-block {
+.catagory .title-catagory-block {
   height: 131px;
   border-bottom: 1px solid #000000;
   display: flex;
   align-items: center;
 }
-.catagory .content-container .title-catagory-block h2 {
+.catagory .title-catagory-block h2 {
   color: #000000;
   font-family: Poppins;
   font-size: clamp(38px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
 }
-.catagory .content-container .title-catagory-block h2 span {
+.catagory .title-catagory-block h2 span {
   color: #50806b;
 }
-.catagory .content-container .img-catagory-block {
+.catagory .img-catagory-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
   gap: 22px 22px;
   margin-bottom: 149.5px;
   margin-top: 52px;
 }
-.catagory .content-container .img-catagory-block div {
+.catagory .img-catagory-block div {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
-.catagory .content-container .img-catagory-block div h3 {
+.catagory .img-catagory-block div h3 {
   color: #343434;
   font-family: Open Sans;
   font-size: 16px;
@@ -238,12 +231,12 @@ main .background .text-block button {
   letter-spacing: 3.2px;
 }
 
-.selling .content-container {
+.selling {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
 }
-.selling .content-container .title-selling-block {
+.selling .title-selling-block {
   height: 131px;
   border-bottom: 1px solid #000000;
   display: flex;
@@ -251,17 +244,17 @@ main .background .text-block button {
   align-items: center;
   margin: auto;
 }
-.selling .content-container .title-selling-block h2 {
+.selling .title-selling-block h2 {
   color: #000000;
   font-family: Poppins;
   font-size: clamp(38px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
 }
-.selling .content-container .title-selling-block h2 span {
+.selling .title-selling-block h2 span {
   color: #50806b;
 }
-.selling .content-container .title-selling-block p {
+.selling .title-selling-block p {
   color: #000000;
   font-family: Poppins;
   font-size: clamp(18px, 5vw, 30px);
@@ -270,7 +263,7 @@ main .background .text-block button {
   text-transform: uppercase;
   cursor: pointer;
 }
-.selling .content-container .img-selling-block {
+.selling .img-selling-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 384px), 1fr));
   gap: 24px 24px;
@@ -278,7 +271,7 @@ main .background .text-block button {
   margin-top: 70px;
   padding: 0 14px;
 }
-.selling .content-container .img-selling-block div {
+.selling .img-selling-block div {
   max-width: 384px;
   display: flex;
   flex-direction: column;
@@ -289,11 +282,11 @@ main .background .text-block button {
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   margin: auto;
 }
-.selling .content-container .img-selling-block div img {
+.selling .img-selling-block div img {
   max-width: 329px;
   height: 100%;
 }
-.selling .content-container .img-selling-block div button {
+.selling .img-selling-block div button {
   padding: 18px 116px;
   border-radius: 8px;
   background: #50806b;

@@ -1,20 +1,13 @@
 @use 'variables';
 
 .Testimonials{
-    background: variables.$second-bg-color;
+    background: variables.$main-bg-color;
     width: 100%;
 
     .testomonials-block{
 
-    
-
     @include variables.content-container;
              height: 100%;
-
-    // .wrapper_test{
-    //     padding: 0 12%;
-    //     margin: 0 auto;
-    //     height: 100%;
 
         .lastBox{
             padding-top: 83.5px;
@@ -62,14 +55,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                
-                
-
-
+   
                 img{
                     min-width: 82px;
-                    // margin: 0 35%;
-                        
+                 
                     }
                 }
 

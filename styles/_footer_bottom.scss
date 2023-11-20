@@ -1,7 +1,7 @@
 @use 'variables';
 
 .footer-bottom{
-    background: variables.$first-bg-color;
+    background: variables.$second-color;
     width: 100%;
     min-height: 55px;
 
@@ -11,7 +11,7 @@
         height: 100%;
 
         .last_container{
-            color: variables.$second-bg-color;
+            color: variables.$main-bg-color;
             text-align: center;
             font-family: 'Public Sans', sans-serif;
             font-size: clamp(12px, 2vw,16px);
@@ -22,7 +22,5 @@
             text-transform: uppercase;
             padding-top: 16px;
         }
-
-
     }
 }

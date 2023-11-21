@@ -1,26 +1,22 @@
-@use 'variables';
+@use "variables";
 
-.footer-bottom{
-    background: variables.$second-color;
-    width: 100%;
-    min-height: 55px;
+.footer-bottom {
+  background: variables.$second-color;
+  width: 100%;
+  min-height: 55px;
 
-    .wrapper_test{
-        padding: 0 12%;
-        margin: 0 auto;
-        height: 100%;
+  @include variables.content-container;
 
-        .last_container{
-            color: variables.$main-bg-color;
-            text-align: center;
-            font-family: 'Public Sans', sans-serif;
-            font-size: clamp(12px, 2vw,16px);
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            padding-top: 16px;
-        }
-    }
+  .last_container {
+    color: variables.$main-bg-color;
+    text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 16px;
+  }
 }

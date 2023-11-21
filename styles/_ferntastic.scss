@@ -1,88 +1,91 @@
-@use 'variables';
+@use "variables";
 
-.Ferntastic_Deals{
-    background: variables.$forth-color;
-    width: 100%;
-        @include variables.content-container;
-        height: 100%;
+.Ferntastic_Deals {
+  background: variables.$fourth-color;
+  width: 100%;
+  @include variables.content-container;
+  height: 100%;
 
-        .dealsName{ 
-            border-bottom: 1px solid #000;
+  .dealsName {
+    border-bottom: 1px solid #000;
 
-            h2{
-                color: variables.$second-color;
-                font-family: variables.$second-font;
-                font-size: clamp(38px, 6vw, 56px);
-                font-style: normal;
-                font-weight: 600;
-                line-height: 120%; 
-                padding-top: 80px;
-                padding-bottom: 32px;
-            }
+    h2 {
+      color: variables.$second-color;
+      font-family: variables.$second-font;
+      font-size: clamp(38px, 6vw, 56px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      padding-top: 80px;
+      padding-bottom: 32px;
+    }
 
-            span{
-                color: variables.$first-color;
-            }
-           }
-           .aktion_plants{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 282px), 1fr));
-            gap: 24px 24px;
-            padding-bottom: 147.5px;
-            margin-top: 48px;
+    span {
+      color: variables.$first-color;
+    }
+  }
+  .aktion_plants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 282px), 1fr));
+    gap: 24px 24px;
+    padding-bottom: 147.5px;
+    margin-top: 48px;
 
-            .inner_card{
-                background: variables.$forth-color;
-                border-radius: 16px;
-                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-                padding: 2%;
-                margin: 0 auto;
-        
-                .aktion1, .aktion2, .aktion3, .aktion4{
-                    max-width: 100%;
-                    padding: 20px;
-    
-                    img{
-                        min-width: 242px;
-                        
-                    }
-                    .name_plants{
-                        color: variables.$third-color;
-                        font-family: variables.$first-font;
-                        font-size: 19px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                        margin-bottom: 4px;
-                        margin-top: 1rem;
-                    }
+    .inner_card {
+      background: variables.$fourth-color;
+      border-radius: 16px;
+      box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+      padding: 2%;
+      margin: 0 auto;
 
-                    .price{
-                        color: variables.$third-color;
-                        font-family: variables.$first-font;
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        margin-bottom: 1rem;
-                    }
+      .aktion1,
+      .aktion2,
+      .aktion3,
+      .aktion4 {
+        max-width: 100%;
+        padding: 20px;
 
-                    span{
-                        color: #D11F1F;;
-                    }
+        img {
+          min-width: 242px;
+        }
+        .name_plants {
+          color: variables.$third-color;
+          font-family: variables.$first-font;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 4px;
+          margin-top: 1rem;
+        }
 
-                    button{
-                        width: 100%;
-                        padding: 16px;
-                        background: variables.$second-color;
-                        border: none;
-                        border-radius: 8px;
-                        box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-                        font-family: variables.$first-font;
-                        color: variables.$forth-color;
-                        font-size: 20px;
-                        font-weight: 700;
-                    }
-            }
-           }
-}}
+        .price {
+          color: variables.$third-color;
+          font-family: variables.$first-font;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 1rem;
+        }
+
+        span {
+          color: #d11f1f;
+        }
+
+        button {
+          width: 100%;
+          padding: 16px;
+          background: variables.$second-color;
+          border: none;
+          border-radius: 8px;
+          box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+          font-family: variables.$first-font;
+          color: variables.$fourth-color;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@
   .footer_menu {
     padding: 48px 80px;
     max-width: 1240px;
+    cursor: pointer;
 
     ul {
       list-style: none;
@@ -32,6 +33,7 @@
       align-items: center;
       gap: 16px;
       padding-top: 24px;
+      cursor: pointer;
     }
   }
 }

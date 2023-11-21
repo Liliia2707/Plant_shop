@@ -428,6 +428,7 @@ main .background .text-block button {
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .Ferntastic_Deals {
@@ -526,6 +527,7 @@ main .background .text-block button {
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .Testimonials {
@@ -568,6 +570,7 @@ main .background .text-block button {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
   gap: 30px 30px;
   padding: 0 25px 90px 25px;
+  cursor: pointer;
 }
 .Testimonials .testomonials-block .comments .inner_card {
   background: #ffffff;
@@ -617,6 +620,7 @@ main .background .text-block button {
 .footer-top .footer_menu {
   padding: 48px 80px;
   max-width: 1240px;
+  cursor: pointer;
 }
 .footer-top .footer_menu ul {
   list-style: none;
@@ -639,15 +643,13 @@ main .background .text-block button {
   align-items: center;
   gap: 16px;
   padding-top: 24px;
+  cursor: pointer;
 }
 
 .footer-bottom {
   background: #50806b;
   width: 100%;
   min-height: 55px;
-  max-width: min(90%, 1260px);
-  padding: 0 15px;
-  margin: 0 auto;
 }
 .footer-bottom .last_container {
   color: #e8edde;

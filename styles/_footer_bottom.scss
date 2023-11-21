@@ -5,8 +5,6 @@
   width: 100%;
   min-height: 55px;
 
-  @include variables.content-container;
-
   .last_container {
     color: variables.$main-bg-color;
     text-align: center;

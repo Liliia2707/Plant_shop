@@ -40,6 +40,7 @@
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
       gap: 30px 30px;
       padding: 0 25px 90px 25px;
+      cursor: pointer;
 
       .inner_card {
         background: variables.$fourth-color;

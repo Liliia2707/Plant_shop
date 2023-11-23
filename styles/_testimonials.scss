@@ -10,6 +10,9 @@
 
     .lastBox {
       padding-top: 83.5px;
+      @media (max-width: 480px) {
+        padding-top: 38px;
+      }
 
       h3 {
         text-align: center;
@@ -21,6 +24,7 @@
         line-height: 62px;
         letter-spacing: -2.4px;
         padding-bottom: 15px;
+       
       }
 
       p {
@@ -47,9 +51,7 @@
         border-radius: 6px;
         box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
 
-        .comment1,
-        .comment2,
-        .comment3 {
+        .comment{
           padding: 32px 30px 26px 30px;
           display: flex;
           flex-direction: column;

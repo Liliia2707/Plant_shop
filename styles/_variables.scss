@@ -3,8 +3,8 @@ $first-color: #000000;
 $second-color: #50806b;
 $third-color: #343434;
 $fourth-color: #ffffff;
-$first-font: Open Sans;
-$second-font: Poppins;
+$first-font: 'Open Sans';
+$second-font: 'Poppins';
 
 @mixin content-container {
   max-width: min(90%, 1260px);

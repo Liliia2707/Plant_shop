@@ -8,7 +8,7 @@
 
   .dealsName {
     border-bottom: 1px solid #000;
-
+    
     h2 {
       color: variables.$second-color;
       font-family: variables.$second-font;
@@ -18,6 +18,10 @@
       line-height: 120%;
       padding-top: 80px;
       padding-bottom: 32px;
+      @media (max-width: 480px) {
+        font-size: 28px;
+        padding-top: 30px;
+      }
     }
 
     span {
@@ -30,6 +34,9 @@
     gap: 24px 24px;
     padding-bottom: 147.5px;
     margin-top: 48px;
+    @media (max-width: 480px) {
+      padding-bottom: 70px;
+    }
 
     .inner_card {
       background: variables.$fourth-color;
@@ -38,10 +45,7 @@
       padding: 2%;
       margin: 0 auto;
 
-      .aktion1,
-      .aktion2,
-      .aktion3,
-      .aktion4 {
+      .aktion{
         max-width: 100%;
         padding: 20px;
 

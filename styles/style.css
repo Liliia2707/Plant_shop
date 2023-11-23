@@ -27,7 +27,7 @@ header .top-block .top-box {
 header .top-block .top-box p,
 header .top-block .top-box .paragraph-block {
   color: #ffffff;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: clamp(11px, 2vw, 16px);
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -69,7 +69,7 @@ header .top-block .top-box .paragraph-block p:last-child {
   justify-content: space-between;
   align-items: center;
   letter-spacing: -0.6px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
 }
 @media screen and (max-width: 480px) {
   .bottom-block .bottom-box {
@@ -199,7 +199,7 @@ main .background .text-block {
   justify-content: center;
   color: #000000;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 main .background .text-block h1 {
   font-size: clamp(42px, 10vw, 80px);
@@ -227,7 +227,7 @@ main .background .text-block button {
   padding: clamp(12px, 2vw, 24px) clamp(28px, 4vw, 56px);
   color: #000000;
   text-align: center;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: clamp(16px, 2vw, 22px);
   font-weight: 600;
   line-height: 22px;
@@ -270,7 +270,7 @@ main .background .text-block button {
 }
 .catagory .title-catagory-block h2 {
   color: #000000;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: clamp(38px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
@@ -306,7 +306,7 @@ main .background .text-block button {
 }
 .catagory .img-catagory-block div h3 {
   color: #343434;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 3.2px;
@@ -338,7 +338,7 @@ main .background .text-block button {
 }
 .selling .title-selling-block h2 {
   color: #000000;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: clamp(38px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
@@ -353,7 +353,7 @@ main .background .text-block button {
 }
 .selling .title-selling-block p {
   color: #000000;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: clamp(18px, 5vw, 30px);
   font-weight: 400;
   line-height: 21.7px;
@@ -432,26 +432,37 @@ main .background .text-block button {
   border-bottom: 1px solid #000;
   padding-bottom: 32px;
 }
+@media (max-width: 480px) {
+  .Hottest_Plants .hottest-block .shop_all {
+    padding-bottom: 25px;
+  }
+}
 .Hottest_Plants .hottest-block .shop_all h2 {
   color: #50806b;
-  font-family: Poppins;
-  font-size: clamp(38px, 6vw, 56px);
+  font-family: "Poppins";
+  font-size: clamp(28px, 6vw, 56px);
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+}
+@media (max-width: 480px) {
+  .Hottest_Plants .hottest-block .shop_all h2 {
+    font-size: 28px;
+  }
 }
 .Hottest_Plants .hottest-block .shop_all span {
   color: #000000;
 }
 .Hottest_Plants .hottest-block .shop_all a {
   color: #000000;
-  font-family: Poppins;
-  font-size: clamp(18px, 6vw, 30px);
+  font-family: "Poppins";
+  font-size: clamp(18px, 5vw, 30px);
   font-style: normal;
   font-weight: 400;
   line-height: 21.7px;
   text-transform: uppercase;
   text-decoration: none;
+  white-space: nowrap;
 }
 .Hottest_Plants .hottest-block .cards_plants {
   display: grid;
@@ -466,37 +477,16 @@ main .background .text-block button {
   padding: 2%;
   margin: 0 auto;
 }
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card1,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card2,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card3,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card4,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card5,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card6,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card7,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card8 {
+.Hottest_Plants .hottest-block .cards_plants .inner_card .card {
   max-width: 80%;
   padding: 20px;
 }
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card1 img,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card2 img,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card3 img,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card4 img,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card5 img,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card6 img,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card7 img,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card8 img {
+.Hottest_Plants .hottest-block .cards_plants .inner_card .card img {
   min-width: 242px;
 }
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card1 .name_plants,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card2 .name_plants,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card3 .name_plants,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card4 .name_plants,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card5 .name_plants,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card6 .name_plants,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card7 .name_plants,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card8 .name_plants {
+.Hottest_Plants .hottest-block .cards_plants .inner_card .card .name_plants {
   color: #343434;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -504,37 +494,23 @@ main .background .text-block button {
   margin-bottom: 4px;
   margin-top: 1rem;
 }
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card1 .price,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card2 .price,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card3 .price,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card4 .price,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card5 .price,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card6 .price,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card7 .price,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card8 .price {
+.Hottest_Plants .hottest-block .cards_plants .inner_card .card .price {
   color: #343434;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem;
 }
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card1 button,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card2 button,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card3 button,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card4 button,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card5 button,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card6 button,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card7 button,
-.Hottest_Plants .hottest-block .cards_plants .inner_card .card8 button {
+.Hottest_Plants .hottest-block .cards_plants .inner_card .card button {
   width: 130%;
   padding: 16px;
   background: #50806b;
   border: none;
   border-radius: 8px;
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-  font-family: Open Sans;
+  font-family: "Open Sans";
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
@@ -560,13 +536,19 @@ main .background .text-block button {
 }
 .Ferntastic_Deals .dealsName h2 {
   color: #50806b;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: clamp(38px, 6vw, 56px);
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
   padding-top: 80px;
   padding-bottom: 32px;
+}
+@media (max-width: 480px) {
+  .Ferntastic_Deals .dealsName h2 {
+    font-size: 28px;
+    padding-top: 30px;
+  }
 }
 .Ferntastic_Deals .dealsName span {
   color: #000000;
@@ -578,6 +560,11 @@ main .background .text-block button {
   padding-bottom: 147.5px;
   margin-top: 48px;
 }
+@media (max-width: 480px) {
+  .Ferntastic_Deals .aktion_plants {
+    padding-bottom: 70px;
+  }
+}
 .Ferntastic_Deals .aktion_plants .inner_card {
   background: #ffffff;
   border-radius: 16px;
@@ -585,25 +572,16 @@ main .background .text-block button {
   padding: 2%;
   margin: 0 auto;
 }
-.Ferntastic_Deals .aktion_plants .inner_card .aktion1,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion2,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion3,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion4 {
+.Ferntastic_Deals .aktion_plants .inner_card .aktion {
   max-width: 100%;
   padding: 20px;
 }
-.Ferntastic_Deals .aktion_plants .inner_card .aktion1 img,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion2 img,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion3 img,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion4 img {
+.Ferntastic_Deals .aktion_plants .inner_card .aktion img {
   min-width: 242px;
 }
-.Ferntastic_Deals .aktion_plants .inner_card .aktion1 .name_plants,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion2 .name_plants,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion3 .name_plants,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion4 .name_plants {
+.Ferntastic_Deals .aktion_plants .inner_card .aktion .name_plants {
   color: #343434;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 19px;
   font-style: normal;
   font-weight: 700;
@@ -611,35 +589,26 @@ main .background .text-block button {
   margin-bottom: 4px;
   margin-top: 1rem;
 }
-.Ferntastic_Deals .aktion_plants .inner_card .aktion1 .price,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion2 .price,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion3 .price,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion4 .price {
+.Ferntastic_Deals .aktion_plants .inner_card .aktion .price {
   color: #343434;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem;
 }
-.Ferntastic_Deals .aktion_plants .inner_card .aktion1 span,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion2 span,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion3 span,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion4 span {
+.Ferntastic_Deals .aktion_plants .inner_card .aktion span {
   color: #d11f1f;
 }
-.Ferntastic_Deals .aktion_plants .inner_card .aktion1 button,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion2 button,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion3 button,
-.Ferntastic_Deals .aktion_plants .inner_card .aktion4 button {
+.Ferntastic_Deals .aktion_plants .inner_card .aktion button {
   width: 100%;
   padding: 16px;
   background: #50806b;
   border: none;
   border-radius: 8px;
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-  font-family: Open Sans;
+  font-family: "Open Sans";
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
@@ -665,10 +634,15 @@ main .background .text-block button {
 .Testimonials .testomonials-block .lastBox {
   padding-top: 83.5px;
 }
+@media (max-width: 480px) {
+  .Testimonials .testomonials-block .lastBox {
+    padding-top: 38px;
+  }
+}
 .Testimonials .testomonials-block .lastBox h3 {
   text-align: center;
   color: #000000;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: clamp(38px, 6vw, 56px);
   font-style: normal;
   font-weight: 500;
@@ -679,7 +653,7 @@ main .background .text-block button {
 .Testimonials .testomonials-block .lastBox p {
   text-align: center;
   color: #000000;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -699,24 +673,20 @@ main .background .text-block button {
   border-radius: 6px;
   box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
 }
-.Testimonials .testomonials-block .comments .inner_card .comment1,
-.Testimonials .testomonials-block .comments .inner_card .comment2,
-.Testimonials .testomonials-block .comments .inner_card .comment3 {
+.Testimonials .testomonials-block .comments .inner_card .comment {
   padding: 32px 30px 26px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.Testimonials .testomonials-block .comments .inner_card .comment1 img,
-.Testimonials .testomonials-block .comments .inner_card .comment2 img,
-.Testimonials .testomonials-block .comments .inner_card .comment3 img {
+.Testimonials .testomonials-block .comments .inner_card .comment img {
   min-width: 82px;
 }
 .Testimonials .testomonials-block .comments .inner_card .text {
   color: #1d293f;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -725,7 +695,7 @@ main .background .text-block button {
 .Testimonials .testomonials-block .comments .inner_card .firstName {
   color: #7c8087;
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -757,6 +727,11 @@ main .background .text-block button {
   align-items: center;
   gap: 16px;
 }
+@media (max-width: 480px) {
+  .footer-top .footer_menu ul {
+    flex-wrap: wrap;
+  }
+}
 .footer-top .footer_menu ul li {
   color: #000000;
   font-family: "Roboto", sans-serif;
@@ -764,6 +739,7 @@ main .background .text-block button {
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
+  white-space: nowrap;
 }
 .footer-top .footer_menu .social_media {
   display: flex;
@@ -783,7 +759,7 @@ main .background .text-block button {
   color: #e8edde;
   text-align: center;
   font-family: "Public Sans", sans-serif;
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(11px, 2vw, 16px);
   font-style: normal;
   font-weight: 500;
   line-height: normal;

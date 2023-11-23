@@ -70,18 +70,7 @@
       }
 
       button {
-        padding: 18px 36%;
-        max-width: 100%;
-        border-radius: 8px;
-        background: variables.$second-color;
-        box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-        border: none;
-        color: #fff;
-        font-family: Open Sans;
-        font-size: clamp(12px, 5vw, 20px);
-        font-weight: 700;
-        white-space: nowrap;
-        cursor: pointer;
+        @include variables.button;
       }
     }
   }

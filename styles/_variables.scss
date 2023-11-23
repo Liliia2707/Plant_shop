@@ -3,8 +3,8 @@ $first-color: #000000;
 $second-color: #50806b;
 $third-color: #343434;
 $fourth-color: #ffffff;
-$first-font: 'Open Sans';
-$second-font: 'Poppins';
+$first-font: "Open Sans";
+$second-font: "Poppins";
 
 @mixin content-container {
   max-width: min(90%, 1260px);
@@ -14,4 +14,19 @@ $second-font: 'Poppins';
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
+}
+
+@mixin button {
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 8px;
+  background:  #50806b;
+  box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  border: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: clamp(12px, 5vw, 20px);
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
 }

@@ -46,12 +46,14 @@
       margin: 0 auto;
 
       .aktion{
-        max-width: 100%;
+        max-width: 242px;
         padding: 20px;
 
         img {
-          min-width: 242px;
+          width: 100%;
+          height: auto;
         }
+
         .name_plants {
           color: variables.$third-color;
           font-family: variables.$first-font;
@@ -77,18 +79,8 @@
           color: #d11f1f;
         }
 
-        button {
-          width: 100%;
-          padding: 16px;
-          background: variables.$second-color;
-          border: none;
-          border-radius: 8px;
-          box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
-          font-family: variables.$first-font;
-          color: variables.$fourth-color;
-          font-size: 20px;
-          font-weight: 700;
-          cursor: pointer;
+        button{
+          @include variables.button;
         }
       }
     }

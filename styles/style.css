@@ -172,7 +172,8 @@ main {
 }
 @media (max-width: 480px) {
   main {
-    margin-bottom: 50px;
+    height: 550px;
+    margin-bottom: 30px;
   }
 }
 main .background {
@@ -186,6 +187,11 @@ main .background {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 480px) {
+  main .background {
+    height: 500px;
+  }
 }
 main .background .text-block {
   max-width: min(55%, 570px);
@@ -201,6 +207,11 @@ main .background .text-block {
   text-align: center;
   font-family: "Poppins";
 }
+@media (max-width: 480px) {
+  main .background .text-block {
+    height: 500px;
+  }
+}
 main .background .text-block h1 {
   font-size: clamp(42px, 10vw, 80px);
   font-weight: 600;
@@ -212,14 +223,14 @@ main .background .text-block h1 {
 @media (max-width: 480px) {
   main .background .text-block h1 {
     letter-spacing: 0.5px;
-    line-height: 50px;
-    font-size: 36px;
+    line-height: 40px;
+    font-size: 34px;
     padding: 0 10px;
   }
 }
 main .background .text-block p {
   max-width: min(90%, 420px);
-  font-size: clamp(18px, 3vw, 22px);
+  font-size: clamp(16px, 3vw, 22px);
   font-weight: 400;
   margin-bottom: 60px;
 }
@@ -242,6 +253,11 @@ main .background .text-block button {
   main .background .text-block button {
     padding: 10px 26px;
     font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  main .background {
+    min-height: 500px;
   }
 }
 

@@ -10,4 +10,8 @@ $second-font: Poppins;
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
+  @media screen and (max-width: 480px) {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
 }

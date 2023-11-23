@@ -24,6 +24,10 @@ header {
         flex: 1 content;
         text-align: center;
         padding-left: 10%;
+        @media screen and (max-width: 480px) {
+          padding-left: 0;
+          padding-right: 2%;
+        }
       }
 
       .paragraph-block {
@@ -86,6 +90,10 @@ header {
           top: 121%;
           z-index: 1;
         }
+        @media (max-width: 480px) {
+          left: 1.5%;
+          font-size: 12px;
+        }
       }
     }
 
@@ -130,6 +138,14 @@ header {
         font-size: 17px;
         font-weight: 400;
         cursor: pointer;
+        @media (max-width: 480px) {
+          font-size: 14px;
+        }
+        img {
+          @media (max-width: 480px) {
+            height: 17px;
+          }
+        }
       }
     }
   }

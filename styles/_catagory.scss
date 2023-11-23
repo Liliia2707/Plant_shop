@@ -8,6 +8,9 @@
     border-bottom: 1px solid variables.$first-color;
     display: flex;
     align-items: center;
+    @media (max-width: 480px) {
+      height: 90px;
+    }
 
     h2 {
       color: variables.$first-color;
@@ -15,6 +18,9 @@
       font-size: clamp(38px, 5vw, 56px);
       font-weight: 600;
       line-height: 120%;
+      @media (max-width: 480px) {
+        font-size: 28px;
+      }
 
       span {
         color: variables.$second-color;
@@ -28,7 +34,12 @@
     gap: 22px 22px;
     margin-bottom: 149.5px;
     margin-top: 52px;
-
+    @media (max-width: 480px) {
+      margin-bottom: 70px;
+    }
+    img {
+      width: 100%;
+    }
     div {
       display: flex;
       flex-direction: column;

@@ -18,6 +18,12 @@ header .top-block .top-box {
   justify-content: end;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  header .top-block .top-box {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
 header .top-block .top-box p,
 header .top-block .top-box .paragraph-block {
   color: #ffffff;
@@ -32,6 +38,12 @@ header .top-block .top-box p {
   flex: 1 content;
   text-align: center;
   padding-left: 10%;
+}
+@media screen and (max-width: 480px) {
+  header .top-block .top-box p {
+    padding-left: 0;
+    padding-right: 2%;
+  }
 }
 header .top-block .top-box .paragraph-block {
   display: flex;
@@ -58,6 +70,12 @@ header .top-block .top-box .paragraph-block p:last-child {
   align-items: center;
   letter-spacing: -0.6px;
   font-family: Open Sans;
+}
+@media screen and (max-width: 480px) {
+  .bottom-block .bottom-box {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
 }
 .bottom-block .bottom-box .logo-block {
   font-size: clamp(18px, 2vw, 26px);
@@ -89,6 +107,12 @@ header .top-block .top-box .paragraph-block p:last-child {
     left: 3%;
     top: 121%;
     z-index: 1;
+  }
+}
+@media (max-width: 480px) {
+  .bottom-block .bottom-box nav ul {
+    left: 1.5%;
+    font-size: 12px;
   }
 }
 .bottom-block .bottom-box .right-block {
@@ -130,11 +154,26 @@ header .top-block .top-box .paragraph-block p:last-child {
   font-weight: 400;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .bottom-block .bottom-box .right-block .basket-block {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .bottom-block .bottom-box .right-block .basket-block img {
+    height: 17px;
+  }
+}
 
 main {
   height: 740px;
   background-color: #50806b;
   margin-bottom: 111px;
+}
+@media (max-width: 480px) {
+  main {
+    margin-bottom: 50px;
+  }
 }
 main .background {
   min-height: 690px;
@@ -170,6 +209,14 @@ main .background .text-block h1 {
   margin-bottom: 50px;
   padding: 0 36px;
 }
+@media (max-width: 480px) {
+  main .background .text-block h1 {
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    font-size: 36px;
+    padding: 0 10px;
+  }
+}
 main .background .text-block p {
   max-width: min(90%, 420px);
   font-size: clamp(18px, 3vw, 22px);
@@ -191,6 +238,12 @@ main .background .text-block button {
   border: none;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  main .background .text-block button {
+    padding: 10px 26px;
+    font-size: 12px;
+  }
+}
 
 .catagory {
   margin: 0 auto;
@@ -198,11 +251,22 @@ main .background .text-block button {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  .catagory {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
 .catagory .title-catagory-block {
   height: 131px;
   border-bottom: 1px solid #000000;
   display: flex;
   align-items: center;
+}
+@media (max-width: 480px) {
+  .catagory .title-catagory-block {
+    height: 90px;
+  }
 }
 .catagory .title-catagory-block h2 {
   color: #000000;
@@ -210,6 +274,11 @@ main .background .text-block button {
   font-size: clamp(38px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
+}
+@media (max-width: 480px) {
+  .catagory .title-catagory-block h2 {
+    font-size: 28px;
+  }
 }
 .catagory .title-catagory-block h2 span {
   color: #50806b;
@@ -220,6 +289,14 @@ main .background .text-block button {
   gap: 22px 22px;
   margin-bottom: 149.5px;
   margin-top: 52px;
+}
+@media (max-width: 480px) {
+  .catagory .img-catagory-block {
+    margin-bottom: 70px;
+  }
+}
+.catagory .img-catagory-block img {
+  width: 100%;
 }
 .catagory .img-catagory-block div {
   display: flex;
@@ -240,6 +317,12 @@ main .background .text-block button {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  .selling {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
 .selling .title-selling-block {
   height: 131px;
   border-bottom: 1px solid #000000;
@@ -248,12 +331,22 @@ main .background .text-block button {
   align-items: center;
   margin: auto;
 }
+@media (max-width: 480px) {
+  .selling .title-selling-block {
+    height: 90px;
+  }
+}
 .selling .title-selling-block h2 {
   color: #000000;
   font-family: Poppins;
   font-size: clamp(38px, 5vw, 56px);
   font-weight: 600;
   line-height: 120%;
+}
+@media (max-width: 480px) {
+  .selling .title-selling-block h2 {
+    font-size: 28px;
+  }
 }
 .selling .title-selling-block h2 span {
   color: #50806b;
@@ -273,7 +366,11 @@ main .background .text-block button {
   gap: 24px 24px;
   margin-bottom: 149.5px;
   margin-top: 70px;
-  padding: 0 14px;
+}
+@media (max-width: 480px) {
+  .selling .img-selling-block {
+    margin-bottom: 70px;
+  }
 }
 .selling .img-selling-block div {
   max-width: 384px;
@@ -286,20 +383,27 @@ main .background .text-block button {
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   margin: auto;
 }
+@media (max-width: 480px) {
+  .selling .img-selling-block div {
+    padding: 5px;
+  }
+}
 .selling .img-selling-block div img {
-  max-width: 329px;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 .selling .img-selling-block div button {
-  padding: 18px 116px;
+  padding: 18px 36%;
+  max-width: 100%;
   border-radius: 8px;
   background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #fff;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: clamp(12px, 5vw, 20px);
   font-weight: 700;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -312,6 +416,12 @@ main .background .text-block button {
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .Hottest_Plants .hottest-block {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
 }
 .Hottest_Plants .hottest-block .shop_all {
   display: flex;
@@ -439,6 +549,12 @@ main .background .text-block button {
   margin: 0 auto;
   height: 100%;
 }
+@media screen and (max-width: 480px) {
+  .Ferntastic_Deals {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
 .Ferntastic_Deals .dealsName {
   border-bottom: 1px solid #000;
 }
@@ -540,6 +656,12 @@ main .background .text-block button {
   margin: 0 auto;
   height: 100%;
 }
+@media screen and (max-width: 480px) {
+  .Testimonials .testomonials-block {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
 .Testimonials .testomonials-block .lastBox {
   padding-top: 83.5px;
 }
@@ -616,6 +738,12 @@ main .background .text-block button {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .footer-top {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
 }
 .footer-top .footer_menu {
   padding: 48px 80px;

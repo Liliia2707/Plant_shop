@@ -4,6 +4,9 @@
   background: variables.$fourth-color;
   width: 100%;
   @include variables.content-container;
+  #grey-background{
+    background-color: variables.$main-bg-color;
+  }
 
   .footer_menu {
     padding: 48px 80px;

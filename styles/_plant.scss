@@ -1,0 +1,70 @@
+@use "variables";
+
+.plantKaufen{
+    background: variables.$main-bg-color;
+
+    .plant-box{
+        @include variables.content-container;
+        
+        .newPlant{
+            display: flex;
+            justify-content: start;
+            align-items: baseline;
+            @media screen and (max-width: 780px) {
+                padding-right: 15%;
+            }
+            
+            div{
+                margin-left: 19px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 780px) {
+                    padding-left: 25%;
+                    padding-right: 3%;
+                }
+                @media screen and (max-width: 480px) {
+                    flex-direction: column;
+                    justify-content: end;
+                    // align-items: center;
+                    // gap: 10px;
+                    padding-right: 10%;
+                }
+
+            h1{
+                color: variables.$first-color;
+                font-size: clamp(40px, 6vw, 80px);
+                font-family: variables.$second-font;
+                line-height: 80px;
+                letter-spacing: 1.6px;
+                padding-top: 49px;
+                padding-bottom: 49px;
+                font-style: normal;
+                font-weight: 400;
+            }
+            h1::after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: clamp(26px, 3vw, 40px);
+                background-color: variables.$first-color;
+                margin-left: clamp(10px, 2vw, 35px);
+                @media screen and (max-width: 615px) {
+                    display: none;
+                }
+            }}
+
+            h5{
+                color: variables.$first-color;
+                font-family: variables.$second-font;
+                font-size: clamp(15px, 2vw, 22px);
+                line-height: normal;
+                padding-left: 21px;
+                font-weight: 400;
+            }
+            }
+       }
+    }
+
+
+

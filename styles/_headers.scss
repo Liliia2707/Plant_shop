@@ -48,9 +48,9 @@ header {
 
 .bottom-block {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
   .bottom-box {
     @include variables.content-container;
-    position: relative;
     height: 61px;
     display: flex;
     justify-content: space-between;

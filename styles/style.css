@@ -58,12 +58,12 @@ header .top-block .top-box .paragraph-block p:last-child {
 
 .bottom-block {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 .bottom-block .bottom-box {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
-  position: relative;
   height: 61px;
   display: flex;
   justify-content: space-between;
@@ -410,17 +410,21 @@ main .background .text-block button {
 }
 .selling .img-selling-block div button {
   width: 100%;
-  padding: 18px 0;
+  padding: 17px 0;
   border-radius: 8px;
   background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
+}
+.selling .img-selling-block div button:hover {
+  background: #406856;
+  box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
 }
 
 .Hottest_Plants {
@@ -522,17 +526,21 @@ main .background .text-block button {
 }
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card button {
   width: 100%;
-  padding: 18px 0;
+  padding: 17px 0;
   border-radius: 8px;
   background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
+}
+.Hottest_Plants .hottest-block .cards_plants .inner_card .card button:hover {
+  background: #406856;
+  box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
 }
 
 .Ferntastic_Deals {
@@ -622,17 +630,21 @@ main .background .text-block button {
 }
 .Ferntastic_Deals .aktion_plants .inner_card .aktion button {
   width: 100%;
-  padding: 18px 0;
+  padding: 17px 0;
   border-radius: 8px;
   background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
+}
+.Ferntastic_Deals .aktion_plants .inner_card .aktion button:hover {
+  background: #406856;
+  box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
 }
 
 .Testimonials {
@@ -735,6 +747,9 @@ main .background .text-block button {
     padding: 0 10px;
   }
 }
+.footer-top #grey-background {
+  background-color: #e8edde;
+}
 .footer-top .footer_menu {
   padding: 48px 80px;
   max-width: 1240px;
@@ -786,4 +801,437 @@ main .background .text-block button {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-top: 16px;
+}
+
+.plantKaufen {
+  background: #e8edde;
+}
+.plantKaufen .plant-box {
+  max-width: min(90%, 1260px);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .plantKaufen .plant-box {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
+.plantKaufen .plant-box .newPlant {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+@media screen and (max-width: 780px) {
+  .plantKaufen .plant-box .newPlant {
+    padding-right: 15%;
+  }
+}
+.plantKaufen .plant-box .newPlant div {
+  margin-left: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 780px) {
+  .plantKaufen .plant-box .newPlant div {
+    padding-left: 25%;
+    padding-right: 3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .plantKaufen .plant-box .newPlant div {
+    flex-direction: column;
+    justify-content: end;
+    padding-right: 10%;
+  }
+}
+.plantKaufen .plant-box .newPlant div h1 {
+  color: #000000;
+  font-size: clamp(40px, 6vw, 80px);
+  font-family: "Poppins";
+  line-height: 80px;
+  letter-spacing: 1.6px;
+  padding-top: 49px;
+  padding-bottom: 49px;
+  font-style: normal;
+  font-weight: 400;
+}
+.plantKaufen .plant-box .newPlant div h1::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: clamp(26px, 3vw, 40px);
+  background-color: #000000;
+  margin-left: clamp(10px, 2vw, 35px);
+}
+@media screen and (max-width: 615px) {
+  .plantKaufen .plant-box .newPlant div h1::after {
+    display: none;
+  }
+}
+.plantKaufen .plant-box .newPlant h5 {
+  color: #000000;
+  font-family: "Poppins";
+  font-size: clamp(15px, 2vw, 22px);
+  line-height: normal;
+  padding-left: 21px;
+  font-weight: 400;
+}
+
+.aboutPlant {
+  background: #ffffff;
+  width: 100%;
+}
+.aboutPlant .plant-box {
+  max-width: min(90%, 1260px);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .aboutPlant .plant-box {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
+.aboutPlant .plant-box .back {
+  margin-top: 16px;
+  margin-bottom: 90px;
+}
+.aboutPlant .plant-box .back a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Poppins";
+  font-size: clamp(15px, 2vw, 22px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 90px;
+}
+.aboutPlant .plant-box .plantList {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1110px) {
+  .aboutPlant .plant-box .plantList {
+    display: grid;
+    margin-left: 35%;
+    margin-right: 23%;
+  }
+}
+.aboutPlant .plant-box .plantList .fotoPlants {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min(100%, 271px), 1fr));
+  gap: 12px 9px;
+  margin-right: 88px;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .aboutPlant .plant-box .plantList .fotoPlants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    margin-bottom: 30px;
+    margin-left: 8%;
+  }
+}
+.aboutPlant .plant-box .plantList .fotoPlants img:last-child {
+  position: relative;
+}
+.aboutPlant .plant-box .plantList .fotoPlants .zoom-icon {
+  position: absolute;
+  transform: translate(1240%, 1240%);
+  width: 40px;
+  height: 40px;
+  background-image: url("../media/about/zoom-in.svg");
+  background-size: contain;
+  cursor: pointer;
+}
+@media (max-width: 550px) {
+  .aboutPlant .plant-box .plantList .fotoPlants .zoom-icon {
+    transform: translate(525%, 2650%);
+  }
+}
+.aboutPlant .plant-box .plantList .basketPlant {
+  width: 50%;
+}
+@media (max-width: 1110px) {
+  .aboutPlant .plant-box .plantList .basketPlant {
+    margin-top: 30px;
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .aboutPlant .plant-box .plantList .basketPlant {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+}
+.aboutPlant .plant-box .plantList .basketPlant h2 {
+  color: #000000;
+  font-family: "Poppins";
+  font-size: clamp(24px, 7vw, 36px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+  padding-bottom: 6px;
+}
+.aboutPlant .plant-box .plantList .basketPlant .price {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: clamp(12px, 6vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.3px;
+  padding-bottom: 23px;
+}
+.aboutPlant .plant-box .plantList .basketPlant p {
+  color: var(--Primary, #0d0d0d);
+  font-family: "Open Sans";
+  font-size: clamp(12px, 7vw, 20px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin-bottom: 50px;
+}
+.aboutPlant .plant-box .plantList .choice::before {
+  content: "Size";
+  color: #000000;
+  opacity: 0.5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  display: block;
+  position: absolute;
+  transform: translateY(-115%);
+}
+.aboutPlant .plant-box .plantList .choice {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  margin-bottom: 23px;
+}
+.aboutPlant .plant-box .plantList .choice .non-crossed-out-btn {
+  border: 1px solid var(--Primary, #0d0d0d);
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14px 18px;
+}
+.aboutPlant .plant-box .plantList .choice .diagonal-cross-btn {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14px 18px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.5);
+}
+.aboutPlant .plant-box .plantList .choice .diagonal-cross-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 252%;
+  height: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  transform: rotate(-45deg);
+}
+.aboutPlant .plant-box .product {
+  display: flex;
+  align-items: center;
+}
+.aboutPlant .plant-box .product .add-to-cart-btn {
+  padding: 14px;
+  width: 70%;
+  background-color: #50806b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-right: 18px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+@media (max-width: 1110px) {
+  .aboutPlant .plant-box .product .add-to-cart-btn {
+    margin-top: 20px;
+  }
+}
+.aboutPlant .plant-box .product .add-to-cart-btn::after {
+  content: "Free standard shipping";
+  color: #000000;
+  opacity: 0.5;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  display: block;
+  position: absolute;
+  transform: translateY(125%);
+}
+.aboutPlant .plant-box .quantity::before {
+  content: "Quantity";
+  color: #000000;
+  opacity: 0.5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  display: block;
+  position: absolute;
+  transform: translateY(-184%);
+}
+.aboutPlant .plant-box .quantity {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  padding: 10px 10px;
+}
+@media (max-width: 1110px) {
+  .aboutPlant .plant-box .quantity {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutPlant .plant-box .quantity {
+    margin-right: 3%;
+    margin-top: 20px;
+  }
+}
+.aboutPlant .plant-box .quantity-btn {
+  padding: 4px 8px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border: none;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.aboutPlant .plant-box .quantity-value {
+  padding: 0 8px;
+}
+
+.care {
+  background: #e8edde;
+  margin-top: 100px;
+}
+.care .plant-box {
+  max-width: min(90%, 1260px);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .care .plant-box {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
+.care .plant-box .boxSidebar {
+  display: flex;
+}
+.care .plant-box .boxSidebar .sidebar {
+  width: 25%;
+  min-height: 420px;
+  padding: 20px;
+  border-right: 1px solid #50806b;
+  font-family: "Open Sans";
+  font-size: clamp(11px, 7vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.55px;
+  color: #000000;
+  position: relative;
+}
+@media screen and (max-width: 650px) {
+  .care .plant-box .boxSidebar .sidebar {
+    padding-right: 30px;
+    width: 140px;
+  }
+}
+.care .plant-box .boxSidebar .sidebar .menu {
+  list-style: none;
+  padding: 0;
+}
+.care .plant-box .boxSidebar .sidebar .menu .has-submenu {
+  text-decoration: none;
+}
+.care .plant-box .boxSidebar .sidebar .menu .has-submenu a {
+  text-decoration: none;
+  list-style: none;
+}
+.care .plant-box .boxSidebar .sidebar .menu a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  padding: 8px 0;
+}
+.care .plant-box .boxSidebar .sidebar .menu a:hover {
+  color: #50806b;
+  font-size: clamp(16px, 7vw, 20px);
+}
+.care .plant-box .boxSidebar .sidebar .menu .submenu {
+  display: none;
+  list-style: none;
+  padding-left: 20%;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: clamp(11px, 7vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.352px;
+  text-transform: capitalize;
+}
+.care .plant-box .boxSidebar .sidebar .menu .submenu.active {
+  display: block;
+}
+.care .plant-box .content {
+  flex: 1;
+  padding: 24px;
+}
+.care .plant-box .content .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.care .plant-box .content .content-box h2 {
+  color: #343434;
+  font-family: "Poppins";
+  font-size: clamp(24px, 6vw, 36px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 22px;
+}
+.care .plant-box .content .content-box p {
+  color: var(--Primary, #0D0D0D);
+  font-family: "Open Sans";
+  font-size: clamp(12px, 4vw, 20px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.4px;
+  padding-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

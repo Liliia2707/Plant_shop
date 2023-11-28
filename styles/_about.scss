@@ -1,0 +1,254 @@
+@use "variables";
+
+.aboutPlant {
+  background: variables.$fourth-color;
+  width: 100%;
+  .plant-box {
+    @include variables.content-container;
+    .back {
+      margin-top: 16px;
+      margin-bottom: 90px;
+      a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: variables.$second-font;
+        font-size: clamp(15px, 2vw, 22px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 90px;
+      }
+    }
+
+    .plantList {
+      display: flex;
+      justify-content: center;
+      @media (max-width: 1110px) {
+        display: grid;
+        margin-left: 35%;
+        margin-right: 23%;
+      }
+
+      .fotoPlants {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min(100%, 271px), 1fr));
+        gap: 12px 9px;
+        margin-right: 88px;
+        position: relative;
+
+        @media (max-width: 600px) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(min(100%, 150px), 1fr));
+            margin-bottom: 30px;
+            margin-left: 8%;
+        }
+
+        img:last-child {
+            position: relative;
+        }
+
+        .zoom-icon {
+            position: absolute;
+            transform: translate(1240%, 1240%);
+            width: 40px;
+            height: 40px;
+            background-image: url("../media/about/zoom-in.svg");
+            background-size: contain;
+            cursor: pointer;
+        @media (max-width: 550px) {
+            transform: translate(525%, 2650%);
+          }
+        }
+      }
+
+      .basketPlant {
+        width: 50%;
+
+        @media (max-width: 1110px) {
+          margin-top: 30px;
+          width: 80%;
+        }
+
+        @media (max-width: 600px) {
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-bottom: 50px;
+        }
+
+        h2 {
+          color: variables.$first-color;
+          font-family: variables.$second-font;
+          font-size: clamp(24px, 7vw, 36px);
+          font-style: normal;
+          font-weight: 500;
+          line-height: 44px;
+          letter-spacing: -1.5px;
+          padding-bottom: 6px;
+        }
+
+        .price {
+          color: variables.$first-color;
+          font-family: variables.$first-font;
+          font-size: clamp(12px, 6vw, 18px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px; /* 144.444% */
+          letter-spacing: -0.3px;
+          padding-bottom: 23px;
+        }
+        p {
+          color: var(--Primary, #0d0d0d);
+          font-family: variables.$first-font;
+          font-size: clamp(12px, 7vw, 20px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: -0.4px;
+          margin-bottom: 50px;
+        }
+      }
+
+      .choice::before {
+        content: "Size";
+        color: variables.$first-color;
+        opacity: 0.5;
+        font-family: variables.$first-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.3px;
+
+        display: block;
+        position: absolute;
+        transform: translateY(-115%);
+      }
+
+      .choice {
+        display: flex;
+        justify-content: start;
+        gap: 8px;
+        margin-bottom: 23px;
+
+        .non-crossed-out-btn {
+          border: 1px solid var(--Primary, #0d0d0d);
+          background: none;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 16px;
+          padding: 14px 18px;
+        }
+
+        .diagonal-cross-btn {
+          position: relative;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          background: none;
+          cursor: pointer;
+          font-size: 16px;
+          padding: 14px 18px;
+          overflow: hidden;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        .diagonal-cross-btn::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 252%;
+          height: 100%;
+          border-top: 1px solid rgba(0, 0, 0, 0.5);
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+
+      .add-to-cart-btn {
+        padding: 14px;
+        width: 70%;
+        background-color: variables.$second-color;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        margin-right: 18px;
+        cursor: pointer;
+
+        color: variables.$fourth-color;
+        text-align: center;
+        font-family: variables.$first-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: -0.4px;
+        @media (max-width: 1110px) {
+          margin-top: 20px;
+        }
+      }
+
+      .add-to-cart-btn::after {
+        content: "Free standard shipping";
+        color: variables.$first-color;
+        opacity: 0.5;
+        font-family: variables.$first-font;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.4px;
+
+        display: block;
+        position: absolute;
+        transform: translateY(125%);
+      }
+    }
+    .quantity::before {
+      content: "Quantity";
+      color: variables.$first-color;
+      opacity: 0.5;
+      font-family: variables.$first-font;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: -0.3px;
+
+      display: block;
+      position: absolute;
+      transform: translateY(-184%);
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+      border: 1px solid variables.$first-color;
+      padding: 10px 10px;
+      @media (max-width: 1110px) {
+        margin-top: 20px;
+      }
+      @media (max-width: 600px) {
+        margin-right: 3%;
+        margin-top: 20px;
+      }
+    }
+
+    .quantity-btn {
+      padding: 4px 8px;
+      background-color: variables.$fourth-color;
+      opacity: 0.5;
+      border: none;
+      margin: 0 4px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .quantity-value {
+      padding: 0 8px;
+    }
+  }
+}

@@ -3,11 +3,18 @@
 .footer-top {
   background: variables.$fourth-color;
   width: 100%;
-  .footer_menu {
-    @include variables.content-container;
-    padding: 48px 80px;
-    max-width: 1240px;
-    cursor: pointer;
+    #grey-background {
+    background: variables.$main-bg-color;
+    }
+    .footer_menu {
+        @include variables.content-container;
+        padding: 48px 80px;
+        max-width: 1240px;
+        cursor: pointer;
+
+    // #grey-background {
+    //   background: variables.$main-bg-color;
+    // }
 
     ul {
       list-style: none;
@@ -17,6 +24,8 @@
       gap: 16px;
       @media (max-width: 480px) {
         flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
 
       li {
@@ -40,6 +49,6 @@
     }
   }
 }
-#grey-background {
-  background: variables.$main-bg-color;
-}
+// #grey-background {
+//   background: variables.$main-bg-color;
+// }

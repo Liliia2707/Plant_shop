@@ -75,6 +75,10 @@ main {
         background: variables.$fourth-color;
         border: none;
         cursor: pointer;
+
+        &:hover {
+          box-shadow: 0px 4px 20px rgba(64, 104, 86, 0.4);
+        }
         @media (max-width: 480px) {
           padding: 10px 26px;
           font-size: 12px;

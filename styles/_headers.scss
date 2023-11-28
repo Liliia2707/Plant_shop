@@ -79,7 +79,12 @@ header {
         gap: clamp(1rem, 5vw, 6rem);
         list-style: none;
         white-space: nowrap;
-        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: variables.$first-color;
+          @include hover($second-color);
+        }
 
         @media (max-width: 780px) {
           flex-direction: column;

@@ -1,0 +1,51 @@
+@use "variables";
+
+.upper-section {
+  background-color: variables.$main-bg-color;
+  .upper-block {
+    @include variables.content-container;
+    display: flex;
+    align-items: center;
+    height: 184px;
+
+    .upper-box {
+      width: 100%;
+      height: 86px;
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+      color: variables.$first-color;
+      font-family: variables.$second-font;
+      gap: 20px;
+      padding-left: 20px;
+      @media screen and (max-width: 780px) {
+        padding-left: 20%;
+      }
+
+      h1 {
+        font-size: clamp(40px, 6vw, 80px);
+        line-height: 80px;
+        letter-spacing: 1.6px;
+        font-family: variables.$second-font;
+        font-weight: 400;
+      }
+
+      h1::after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: clamp(26px, 3vw, 40px);
+        background-color: variables.$first-color;
+        margin-left: clamp(10px, 2vw, 35px);
+        font-weight: 400;
+        @media screen and (max-width: 790px) {
+          display: none;
+        }
+      }
+
+      p {
+        font-size: clamp(14px, 4vw, 22px);
+      }
+    }
+  }
+}

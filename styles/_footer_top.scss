@@ -3,15 +3,18 @@
 .footer-top {
   background: variables.$fourth-color;
   width: 100%;
-  @include variables.content-container;
-  #grey-background{
-    background-color: variables.$main-bg-color;
-  }
+    #grey-background {
+    background: variables.$main-bg-color;
+    }
+    .footer_menu {
+        @include variables.content-container;
+        padding: 48px 80px;
+        max-width: 1240px;
+        cursor: pointer;
 
-  .footer_menu {
-    padding: 48px 80px;
-    max-width: 1240px;
-    cursor: pointer;
+    // #grey-background {
+    //   background: variables.$main-bg-color;
+    // }
 
     ul {
       list-style: none;
@@ -21,6 +24,8 @@
       gap: 16px;
       @media (max-width: 480px) {
         flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
 
       li {
@@ -30,8 +35,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 100%;
-        white-space: nowrap; 
-        
+        white-space: nowrap;
       }
     }
 
@@ -45,3 +49,6 @@
     }
   }
 }
+// #grey-background {
+//   background: variables.$main-bg-color;
+// }

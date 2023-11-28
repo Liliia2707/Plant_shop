@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600&family=Public+Sans:wght@500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="top-block">
+            <div class="content-container">
+                <div class="top-box">
+                    <p>FREE SHIPPING ON ALL FULL SUN PLANTS! FEB. 25–28. </p>
+                    <div class="paragraph-block">
+                        <p>USD</p>
+                        <p>Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-block">
+            <div class="content-container">
+                <div class="bottom-box">
+                    <div class="logo-block">
+                        <p><span>Green</span> Thumb</p>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Products</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="right-block">
+                        <div class="search-block">
+                            <input type="text" placeholder="Search">
+                            <button class="search-button">
+                                <img src="./media/header/Search.svg" alt="Search Icon">
+                            </button>
+                        </div>
+                        <div class="basket-block">
+                            <img src="./media/header/basket.svg" alt="basket">
+                            <p>3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="upper-section">
+        <div class="upper-block">
+            <div class="content-container">
+                <div class="upper-box">
+                    <h1>Shop</h1>
+                    <p>Find the perfect plant for your space</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="content-container">
+            <div class="popular-product">
+                <div>
+                    <p>Sort By</p>
+                    <p>Popular</p>
+                    <img src="./media/main_shop/Chevron_Down.svg" alt="Chevron_Down">
+                </div>
+                <p>Showing 1003 Products</p>
+            </div>
+            <div class="main-block">
+                <div class="sidebar">
+                    <div class="all-categories">
+                        <div class="menu-categories" id="allCategories"
+                            onclick="toggleMenu('blockMenu', this.querySelector('img'))">
+                            <img src="./media/main_shop/right.svg" alt="right" id="img-categories">
+                            <div>
+                                <p>All Categories</p>
+                                <p>Plants on Sale</p>
+                            </div>
+                        </div>
+                        <div class="block-menu" id="blockMenu">
+                            <div class="menu-indoor" id="indoorPlants">
+                                <div class="indoor-box"
+                                    onclick="toggleMenu('indoorPlantsSubMenu', this.querySelector('img'))">
+                                    <img src="./media/main_shop/right.svg" alt="right" id="img-indoor">
+                                    <p>Indoor Plants</p>
+                                </div>
+                                <ul id="indoorPlantsSubMenu">
+                                    <li>Alocasia</li>
+                                    <li>Hoya</li>
+                                    <li>Sansevieria</li>
+                                    <li>Syngonium</li>
+                                    <li>
+                                        <div>
+                                            <p>Show more</p>
+                                            <img src="./media/main_shop/down.svg" alt="down">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-outdoor" id="outdoorPlants">
+                                <img src="./media/main_shop/right.svg" alt="right">
+                                <p>Outdoor plants</p>
+                            </div>
+
+                            <div class="menu-sun" id="sunPlants">
+                                <img src="./media/main_shop/right.svg" alt="right">
+                                <p>Sun requirements</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>Price</p>
+                        <img src="./media/main_shop/down.svg" alt="down">
+                    </div>
+                    <div class="include">
+                        <p>Include</p>
+                        <div class="radio-container">
+                            <input type="radio" id="planter" name="category" class="green-radio">
+                            <label for="planter">Planter</label>
+                        </div>
+
+                        <div class="radio-container">
+                            <input type="radio" id="flowers" name="category">
+                            <label for="flowers">Flowers</label>
+                        </div>
+
+                        <div class="radio-container">
+                            <input type="radio" id="care" name="category">
+                            <label for="care">Care</label>
+                        </div>
+
+                        <div class="radio-container">
+                            <input type="radio" id="heat-pack" name="category">
+                            <label for="heat-pack">Heat pack</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <div>
+                        <img src="./media/main_shop/marble.svg" alt="marble">
+                        <p>Marble Queen</p>
+                        <p>$ 350</p>
+                        <button type="button" onclick="window.location.href='plant.html'">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/neon.svg" alt="neon">
+                        <p>Neon Pothos</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/rayii.svg" alt="rayii">
+                        <p>Syngonium Rayii</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/pineapple.svg" alt="pineapple">
+                        <p>Pineapple</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/african_tree.svg" alt="african_tree">
+                        <p>African Milk Tree</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/pothos.svg" alt="pothos">
+                        <p>Pothos</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/chinese.svg" alt="chinese">
+                        <p>Chinese Evergreen</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/rayii2.svg" alt="rayii2">
+                        <p>Syngonium Rayii</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                    <div>
+                        <img src="./media/main_shop/cactus.svg" alt="card6">
+                        <p>Peruvian Cactus</p>
+                        <p>$ 350</p>
+                        <button type="submit">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-top" id="grey-background">
+        <div class="footer-top-box">
+            <div class="content-container">
+                <div class="footer_menu">
+                    <ul>
+                        <li>Products</li>
+                        <li>Returns</li>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                    </ul>
+
+                    <div class="social_media">
+                        <img src="./media/footer/youtube.svg" alt="youTube">
+                        <img src="./media/footer/facebook.svg" alt="facebook">
+                        <img src="./media/footer/twitter.svg" alt="twitter">
+                        <img src="./media/footer/instagram.svg" alt="instagram">
+                        <img src="./media/footer/linkedin.svg" alt="in">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-bottom">
+        <div class="footer-bottom-box">
+            <div class="last_container">
+                <p>Copyright Green thumb. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./shop.js"></script>
+</body>
+
+</html>

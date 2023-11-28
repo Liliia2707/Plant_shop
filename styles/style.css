@@ -58,12 +58,12 @@ header .top-block .top-box .paragraph-block p:last-child {
 
 .bottom-block {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 .bottom-block .bottom-box {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
-  position: relative;
   height: 61px;
   display: flex;
   justify-content: space-between;
@@ -96,7 +96,13 @@ header .top-block .top-box .paragraph-block p:last-child {
   gap: clamp(1rem, 5vw, 6rem);
   list-style: none;
   white-space: nowrap;
-  cursor: pointer;
+}
+.bottom-block .bottom-box nav ul a {
+  text-decoration: none;
+  color: #000000;
+}
+.bottom-block .bottom-box nav ul :hover {
+  color: #50806b;
 }
 @media (max-width: 780px) {
   .bottom-block .bottom-box nav ul {
@@ -248,6 +254,9 @@ main .background .text-block button {
   background: #ffffff;
   border: none;
   cursor: pointer;
+}
+main .background .text-block button:hover {
+  box-shadow: 0px 4px 20px rgba(64, 104, 86, 0.4);
 }
 @media (max-width: 480px) {
   main .background .text-block button {
@@ -410,17 +419,21 @@ main .background .text-block button {
 }
 .selling .img-selling-block div button {
   width: 100%;
-  padding: 18px 0;
+  padding: 17px 0;
   border-radius: 8px;
   background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
+}
+.selling .img-selling-block div button:hover {
+  background: #406856;
+  box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
 }
 
 .Hottest_Plants {
@@ -522,17 +535,21 @@ main .background .text-block button {
 }
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card button {
   width: 100%;
-  padding: 18px 0;
+  padding: 17px 0;
   border-radius: 8px;
   background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
+}
+.Hottest_Plants .hottest-block .cards_plants .inner_card .card button:hover {
+  background: #406856;
+  box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
 }
 
 .Ferntastic_Deals {
@@ -622,17 +639,21 @@ main .background .text-block button {
 }
 .Ferntastic_Deals .aktion_plants .inner_card .aktion button {
   width: 100%;
-  padding: 18px 0;
+  padding: 17px 0;
   border-radius: 8px;
   background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
+}
+.Ferntastic_Deals .aktion_plants .inner_card .aktion button:hover {
+  background: #406856;
+  box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
 }
 
 .Testimonials {
@@ -725,20 +746,20 @@ main .background .text-block button {
 .footer-top {
   background: #ffffff;
   width: 100%;
+}
+.footer-top .footer_menu {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
-}
-@media screen and (max-width: 480px) {
-  .footer-top {
-    max-width: min(99%, 480px);
-    padding: 0 10px;
-  }
-}
-.footer-top .footer_menu {
   padding: 48px 80px;
   max-width: 1240px;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .footer-top .footer_menu {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
 }
 .footer-top .footer_menu ul {
   list-style: none;
@@ -770,6 +791,10 @@ main .background .text-block button {
   cursor: pointer;
 }
 
+#grey-background {
+  background: #e8edde;
+}
+
 .footer-bottom {
   background: #50806b;
   width: 100%;
@@ -786,4 +811,356 @@ main .background .text-block button {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-top: 16px;
+}
+
+.upper-section {
+  background-color: #e8edde;
+}
+.upper-section .upper-block {
+  max-width: min(90%, 1260px);
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 184px;
+}
+@media screen and (max-width: 480px) {
+  .upper-section .upper-block {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
+.upper-section .upper-block .upper-box {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  color: #000000;
+  font-family: "Poppins";
+  gap: 20px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 780px) {
+  .upper-section .upper-block .upper-box {
+    padding-left: 20%;
+  }
+}
+.upper-section .upper-block .upper-box h1 {
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 80px;
+  letter-spacing: 1.6px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.upper-section .upper-block .upper-box h1::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: clamp(26px, 3vw, 40px);
+  background-color: #000000;
+  margin-left: clamp(10px, 2vw, 35px);
+  font-weight: 400;
+}
+@media screen and (max-width: 790px) {
+  .upper-section .upper-block .upper-box h1::after {
+    display: none;
+  }
+}
+.upper-section .upper-block .upper-box p {
+  font-size: clamp(14px, 4vw, 22px);
+}
+
+.main-content {
+  max-width: min(90%, 1260px);
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 86px;
+  margin-bottom: 121px;
+}
+@media screen and (max-width: 480px) {
+  .main-content {
+    max-width: min(99%, 480px);
+    padding: 0 10px;
+  }
+}
+@media (max-width: 900px) {
+  .main-content {
+    margin-top: 42px;
+    margin-bottom: 60px;
+  }
+}
+.main-content .popular-product {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 9px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+@media (max-width: 1200px) {
+  .main-content .popular-product {
+    padding-right: 7%;
+  }
+}
+@media (max-width: 900px) {
+  .main-content .popular-product {
+    align-items: start;
+    padding-left: 2%;
+  }
+}
+@media (max-width: 480px) {
+  .main-content .popular-product {
+    align-items: center;
+  }
+}
+.main-content .popular-product div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+}
+.main-content .popular-product div p:nth-child(1) {
+  font-weight: 400;
+  opacity: 0.5;
+}
+.main-content .popular-product div p:nth-child(2) {
+  font-weight: 700;
+}
+.main-content .popular-product div img {
+  cursor: pointer;
+}
+.main-content .popular-product p {
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+.main-content .main-block {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .main-content .main-block {
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .main-content .main-block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-content .main-block .sidebar {
+  color: #343434;
+  font-family: "Open Sans";
+  width: 20%;
+  min-width: 190px;
+}
+@media (max-width: 480px) {
+  .main-content .main-block .sidebar {
+    width: 242px;
+  }
+}
+.main-content .main-block .sidebar .all-categories {
+  margin-bottom: 19px;
+  border-radius: 10px;
+  border: 1px solid #e3e5e5;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  display: flex;
+  flex-direction: column;
+  padding: 16px 18px 10px;
+  white-space: nowrap;
+}
+.main-content .main-block .sidebar .all-categories .menu-categories {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.55px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.main-content .main-block .sidebar .all-categories .menu-categories :hover {
+  color: #50806b;
+  font-size: 17px;
+}
+.main-content .main-block .sidebar .all-categories .menu-categories p:nth-child(1) {
+  font-size: clamp(14px, 2vw, 20px);
+  margin-bottom: 2px;
+}
+.main-content .main-block .sidebar .all-categories .menu-categories p:nth-child(2) {
+  font-size: clamp(12px, 3vw, 14px);
+  opacity: 0.6;
+}
+.main-content .main-block .sidebar .all-categories .block-menu {
+  display: none;
+  flex-direction: column;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-indoor {
+  flex-direction: column;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-indoor .indoor-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 9px;
+  padding-bottom: 16px;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.352px;
+  cursor: pointer;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-indoor .indoor-box :hover {
+  color: #50806b;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul {
+  display: none;
+  flex-direction: column;
+  font-size: clamp(14px, 2vw, 16px);
+  list-style: none;
+  padding-left: 34px;
+  color: #343434;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.352px;
+  text-transform: capitalize;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul :hover {
+  color: #50806b;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul li {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul li div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-outdoor,
+.main-content .main-block .sidebar .all-categories .block-menu .menu-sun {
+  font-size: clamp(14px, 1vw, 16px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding-left: 9px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main-content .main-block .sidebar .all-categories .block-menu .menu-outdoor :hover,
+.main-content .main-block .sidebar .all-categories .block-menu .menu-sun :hover {
+  color: #50806b;
+}
+.main-content .main-block .sidebar .price {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #e3e5e5;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 18px 24px;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  margin-bottom: 21px;
+  cursor: pointer;
+}
+.main-content .main-block .sidebar .price:hover {
+  color: #50806b;
+}
+.main-content .main-block .sidebar .include {
+  border-radius: 10px;
+  border: 1px solid #e3e5e5;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 23px 40px 12px 24px;
+  font-size: clamp(14px, 2vw, 16px);
+}
+.main-content .main-block .sidebar .include p {
+  margin-bottom: 8px;
+}
+.main-content .main-block .sidebar .include .radio-container {
+  margin-bottom: 4px;
+}
+.main-content .main-block .sidebar .include .radio-container label:hover {
+  color: #50806b;
+  cursor: pointer;
+}
+.main-content .main-block .products-card {
+  width: 73%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.main-content .main-block .products-card div {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 16px;
+  gap: 16px;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  color: #343434;
+  font-family: "Open Sans";
+  font-size: clamp(12px, 3vw, 20px);
+}
+@media (max-width: 1200px) {
+  .main-content .main-block .products-card div {
+    max-width: 242px;
+    gap: 5px;
+    margin: auto;
+  }
+}
+@media (max-width: 940px) {
+  .main-content .main-block .products-card div {
+    max-width: 220px;
+  }
+}
+@media (max-width: 900px) {
+  .main-content .main-block .products-card div {
+    max-width: 100%;
+  }
+}
+.main-content .main-block .products-card div p:nth-child(1) {
+  font-weight: 400;
+}
+.main-content .main-block .products-card div p:nth-child(2) {
+  font-weight: 700;
+}
+.main-content .main-block .products-card div img {
+  width: 100%;
+  height: auto;
+}
+.main-content .main-block .products-card div button {
+  width: 100%;
+  padding: 17px 0;
+  border-radius: 8px;
+  background: #50806b;
+  box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  border: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: clamp(12px, 3vw, 20px);
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main-content .main-block .products-card div button:hover {
+  background: #406856;
+  box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
+}
+@media (max-width: 580px) {
+  .main-content .main-block .products-card div button {
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

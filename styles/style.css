@@ -9,6 +9,7 @@
 header .top-block {
   background-color: #50806b;
 }
+
 header .top-block .top-box {
   max-width: min(90%, 1260px);
   padding: 0 15px;
@@ -18,12 +19,14 @@ header .top-block .top-box {
   justify-content: end;
   align-items: center;
 }
+
 @media screen and (max-width: 480px) {
   header .top-block .top-box {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 header .top-block .top-box p,
 header .top-block .top-box .paragraph-block {
   color: #ffffff;
@@ -33,25 +36,30 @@ header .top-block .top-box .paragraph-block {
   cursor: pointer;
   gap: 23px;
 }
+
 header .top-block .top-box p {
   font-weight: 600;
   flex: 1 content;
   text-align: center;
   padding-left: 10%;
 }
+
 @media screen and (max-width: 480px) {
   header .top-block .top-box p {
     padding-left: 0;
     padding-right: 2%;
   }
 }
+
 header .top-block .top-box .paragraph-block {
   display: flex;
   padding-right: 2%;
 }
+
 header .top-block .top-box .paragraph-block p:first-child {
   font-weight: 400;
 }
+
 header .top-block .top-box .paragraph-block p:last-child {
   font-weight: 700;
 }
@@ -60,6 +68,7 @@ header .top-block .top-box .paragraph-block p:last-child {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
+
 .bottom-block .bottom-box {
   max-width: min(90%, 1260px);
   padding: 0 15px;
@@ -71,25 +80,30 @@ header .top-block .top-box .paragraph-block p:last-child {
   letter-spacing: -0.6px;
   font-family: "Open Sans";
 }
+
 @media screen and (max-width: 480px) {
   .bottom-block .bottom-box {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 .bottom-block .bottom-box .logo-block {
   font-size: clamp(18px, 2vw, 26px);
   font-weight: 600;
   color: #000000;
 }
+
 .bottom-block .bottom-box .logo-block span {
   color: #50806b;
 }
+
 .bottom-block .bottom-box nav {
   color: #000000;
   font-size: clamp(14px, 2vw, 17px);
   font-weight: 400;
 }
+
 .bottom-block .bottom-box nav ul {
   display: flex;
   justify-content: space-between;
@@ -97,13 +111,16 @@ header .top-block .top-box .paragraph-block p:last-child {
   list-style: none;
   white-space: nowrap;
 }
+
 .bottom-block .bottom-box nav ul a {
   text-decoration: none;
   color: #000000;
 }
+
 .bottom-block .bottom-box nav ul :hover {
   color: #50806b;
 }
+
 @media (max-width: 780px) {
   .bottom-block .bottom-box nav ul {
     flex-direction: column;
@@ -115,20 +132,24 @@ header .top-block .top-box .paragraph-block p:last-child {
     z-index: 1;
   }
 }
+
 @media (max-width: 480px) {
   .bottom-block .bottom-box nav ul {
     left: 1.5%;
     font-size: 12px;
   }
 }
+
 .bottom-block .bottom-box .right-block {
   display: flex;
   justify-content: space-between;
 }
+
 .bottom-block .bottom-box .right-block .search-block {
   display: flex;
   align-items: center;
 }
+
 .bottom-block .bottom-box .right-block .search-block input {
   border: none;
   max-width: 67px;
@@ -136,6 +157,7 @@ header .top-block .top-box .paragraph-block p:last-child {
   font-size: clamp(14px, 1vw, 17px);
   font-weight: 400;
 }
+
 .bottom-block .bottom-box .right-block .search-block button {
   max-width: 22px;
   height: 22px;
@@ -143,6 +165,7 @@ header .top-block .top-box .paragraph-block p:last-child {
   background: #ffffff;
   cursor: pointer;
 }
+
 .bottom-block .bottom-box .right-block .search-block::after {
   content: "";
   display: inline-block;
@@ -151,6 +174,7 @@ header .top-block .top-box .paragraph-block p:last-child {
   background-color: #979797;
   margin: 0 clamp(10px, 2vw, 26px);
 }
+
 .bottom-block .bottom-box .right-block .basket-block {
   display: flex;
   align-items: center;
@@ -160,11 +184,13 @@ header .top-block .top-box .paragraph-block p:last-child {
   font-weight: 400;
   cursor: pointer;
 }
+
 @media (max-width: 480px) {
   .bottom-block .bottom-box .right-block .basket-block {
     font-size: 14px;
   }
 }
+
 @media (max-width: 480px) {
   .bottom-block .bottom-box .right-block .basket-block img {
     height: 17px;
@@ -176,12 +202,14 @@ main {
   background-color: #50806b;
   margin-bottom: 111px;
 }
+
 @media (max-width: 480px) {
   main {
     height: 550px;
     margin-bottom: 30px;
   }
 }
+
 main .background {
   min-height: 690px;
   width: 100%;
@@ -194,16 +222,18 @@ main .background {
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 480px) {
   main .background {
     height: 500px;
   }
 }
+
 main .background .text-block {
   max-width: min(55%, 570px);
   background: rgba(80, 128, 107, 0.2);
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   height: 690px;
   display: flex;
   flex-direction: column;
@@ -213,11 +243,13 @@ main .background .text-block {
   text-align: center;
   font-family: "Poppins";
 }
+
 @media (max-width: 480px) {
   main .background .text-block {
     height: 500px;
   }
 }
+
 main .background .text-block h1 {
   font-size: clamp(42px, 10vw, 80px);
   font-weight: 600;
@@ -226,6 +258,7 @@ main .background .text-block h1 {
   margin-bottom: 50px;
   padding: 0 36px;
 }
+
 @media (max-width: 480px) {
   main .background .text-block h1 {
     letter-spacing: 0.5px;
@@ -234,12 +267,14 @@ main .background .text-block h1 {
     padding: 0 10px;
   }
 }
+
 main .background .text-block p {
   max-width: min(90%, 420px);
   font-size: clamp(16px, 3vw, 22px);
   font-weight: 400;
   margin-bottom: 60px;
 }
+
 main .background .text-block button {
   padding: clamp(12px, 2vw, 24px) clamp(28px, 4vw, 56px);
   color: #000000;
@@ -255,15 +290,18 @@ main .background .text-block button {
   border: none;
   cursor: pointer;
 }
+
 main .background .text-block button:hover {
   box-shadow: 0px 4px 20px rgba(64, 104, 86, 0.4);
 }
+
 @media (max-width: 480px) {
   main .background .text-block button {
     padding: 10px 26px;
     font-size: 12px;
   }
 }
+
 @media (max-width: 480px) {
   main .background {
     min-height: 500px;
@@ -276,23 +314,27 @@ main .background .text-block button:hover {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 480px) {
   .catagory {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 .catagory .title-catagory-block {
   height: 131px;
   border-bottom: 1px solid #000000;
   display: flex;
   align-items: center;
 }
+
 @media (max-width: 480px) {
   .catagory .title-catagory-block {
     height: 90px;
   }
 }
+
 .catagory .title-catagory-block h2 {
   color: #000000;
   font-family: "Poppins";
@@ -300,14 +342,17 @@ main .background .text-block button:hover {
   font-weight: 600;
   line-height: 120%;
 }
+
 @media (max-width: 480px) {
   .catagory .title-catagory-block h2 {
     font-size: 28px;
   }
 }
+
 .catagory .title-catagory-block h2 span {
   color: #50806b;
 }
+
 .catagory .img-catagory-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
@@ -315,20 +360,24 @@ main .background .text-block button:hover {
   margin-bottom: 149.5px;
   margin-top: 52px;
 }
+
 @media (max-width: 480px) {
   .catagory .img-catagory-block {
     margin-bottom: 70px;
   }
 }
+
 .catagory .img-catagory-block img {
   width: 100%;
 }
+
 .catagory .img-catagory-block div {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
+
 .catagory .img-catagory-block div h3 {
   color: #343434;
   font-family: "Open Sans";
@@ -342,12 +391,14 @@ main .background .text-block button:hover {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 480px) {
   .selling {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 .selling .title-selling-block {
   height: 131px;
   border-bottom: 1px solid #000000;
@@ -356,11 +407,13 @@ main .background .text-block button:hover {
   align-items: center;
   margin: auto;
 }
+
 @media (max-width: 480px) {
   .selling .title-selling-block {
     height: 90px;
   }
 }
+
 .selling .title-selling-block h2 {
   color: #000000;
   font-family: "Poppins";
@@ -368,14 +421,17 @@ main .background .text-block button:hover {
   font-weight: 600;
   line-height: 120%;
 }
+
 @media (max-width: 480px) {
   .selling .title-selling-block h2 {
     font-size: 28px;
   }
 }
+
 .selling .title-selling-block h2 span {
   color: #50806b;
 }
+
 .selling .title-selling-block p {
   color: #000000;
   font-family: "Poppins";
@@ -385,6 +441,7 @@ main .background .text-block button:hover {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .selling .img-selling-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 384px), 1fr));
@@ -392,11 +449,13 @@ main .background .text-block button:hover {
   margin-bottom: 149.5px;
   margin-top: 70px;
 }
+
 @media (max-width: 480px) {
   .selling .img-selling-block {
     margin-bottom: 70px;
   }
 }
+
 .selling .img-selling-block div {
   max-width: 384px;
   display: flex;
@@ -408,15 +467,18 @@ main .background .text-block button:hover {
   box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   margin: auto;
 }
+
 @media (max-width: 480px) {
   .selling .img-selling-block div {
     padding: 5px;
   }
 }
+
 .selling .img-selling-block div img {
   width: 100%;
   height: auto;
 }
+
 .selling .img-selling-block div button {
   width: 100%;
   padding: 17px 0;
@@ -431,6 +493,7 @@ main .background .text-block button:hover {
   white-space: nowrap;
   cursor: pointer;
 }
+
 .selling .img-selling-block div button:hover {
   background: #406856;
   box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
@@ -440,18 +503,21 @@ main .background .text-block button:hover {
   background: #e8edde;
   width: 100%;
 }
+
 .Hottest_Plants .hottest-block {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
 }
+
 @media screen and (max-width: 480px) {
   .Hottest_Plants .hottest-block {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 .Hottest_Plants .hottest-block .shop_all {
   display: flex;
   justify-content: space-between;
@@ -461,11 +527,13 @@ main .background .text-block button:hover {
   border-bottom: 1px solid #000;
   padding-bottom: 32px;
 }
+
 @media (max-width: 480px) {
   .Hottest_Plants .hottest-block .shop_all {
     padding-bottom: 25px;
   }
 }
+
 .Hottest_Plants .hottest-block .shop_all h2 {
   color: #50806b;
   font-family: "Poppins";
@@ -474,14 +542,17 @@ main .background .text-block button:hover {
   font-weight: 600;
   line-height: 120%;
 }
+
 @media (max-width: 480px) {
   .Hottest_Plants .hottest-block .shop_all h2 {
     font-size: 28px;
   }
 }
+
 .Hottest_Plants .hottest-block .shop_all span {
   color: #000000;
 }
+
 .Hottest_Plants .hottest-block .shop_all a {
   color: #000000;
   font-family: "Poppins";
@@ -493,12 +564,14 @@ main .background .text-block button:hover {
   text-decoration: none;
   white-space: nowrap;
 }
+
 .Hottest_Plants .hottest-block .cards_plants {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 282px), 1fr));
   gap: 24px 24px;
   padding-bottom: 100px;
 }
+
 .Hottest_Plants .hottest-block .cards_plants .inner_card {
   background: #ffffff;
   border-radius: 16px;
@@ -506,14 +579,17 @@ main .background .text-block button:hover {
   padding: 2%;
   margin: 0 auto;
 }
+
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card {
   max-width: 242px;
   padding: 20px;
 }
+
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card img {
   width: 100%;
   height: auto;
 }
+
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card .name_plants {
   color: #343434;
   font-family: "Open Sans";
@@ -524,6 +600,7 @@ main .background .text-block button:hover {
   margin-bottom: 4px;
   margin-top: 1rem;
 }
+
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card .price {
   color: #343434;
   font-family: "Open Sans";
@@ -533,6 +610,7 @@ main .background .text-block button:hover {
   line-height: normal;
   margin-bottom: 1rem;
 }
+
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card button {
   width: 100%;
   padding: 17px 0;
@@ -547,6 +625,7 @@ main .background .text-block button:hover {
   white-space: nowrap;
   cursor: pointer;
 }
+
 .Hottest_Plants .hottest-block .cards_plants .inner_card .card button:hover {
   background: #406856;
   box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
@@ -560,15 +639,18 @@ main .background .text-block button:hover {
   margin: 0 auto;
   height: 100%;
 }
+
 @media screen and (max-width: 480px) {
   .Ferntastic_Deals {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 .Ferntastic_Deals .dealsName {
   border-bottom: 1px solid #000;
 }
+
 .Ferntastic_Deals .dealsName h2 {
   color: #50806b;
   font-family: "Poppins";
@@ -579,15 +661,18 @@ main .background .text-block button:hover {
   padding-top: 80px;
   padding-bottom: 32px;
 }
+
 @media (max-width: 480px) {
   .Ferntastic_Deals .dealsName h2 {
     font-size: 28px;
     padding-top: 30px;
   }
 }
+
 .Ferntastic_Deals .dealsName span {
   color: #000000;
 }
+
 .Ferntastic_Deals .aktion_plants {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 282px), 1fr));
@@ -595,11 +680,13 @@ main .background .text-block button:hover {
   padding-bottom: 147.5px;
   margin-top: 48px;
 }
+
 @media (max-width: 480px) {
   .Ferntastic_Deals .aktion_plants {
     padding-bottom: 70px;
   }
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card {
   background: #ffffff;
   border-radius: 16px;
@@ -607,14 +694,17 @@ main .background .text-block button:hover {
   padding: 2%;
   margin: 0 auto;
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card .aktion {
   max-width: 242px;
   padding: 20px;
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card .aktion img {
   width: 100%;
   height: auto;
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card .aktion .name_plants {
   color: #343434;
   font-family: "Open Sans";
@@ -625,6 +715,7 @@ main .background .text-block button:hover {
   margin-bottom: 4px;
   margin-top: 1rem;
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card .aktion .price {
   color: #343434;
   font-family: "Open Sans";
@@ -634,9 +725,11 @@ main .background .text-block button:hover {
   line-height: normal;
   margin-bottom: 1rem;
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card .aktion span {
   color: #d11f1f;
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card .aktion button {
   width: 100%;
   padding: 17px 0;
@@ -651,6 +744,7 @@ main .background .text-block button:hover {
   white-space: nowrap;
   cursor: pointer;
 }
+
 .Ferntastic_Deals .aktion_plants .inner_card .aktion button:hover {
   background: #406856;
   box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
@@ -660,26 +754,31 @@ main .background .text-block button:hover {
   background: #e8edde;
   width: 100%;
 }
+
 .Testimonials .testomonials-block {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
 }
+
 @media screen and (max-width: 480px) {
   .Testimonials .testomonials-block {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 .Testimonials .testomonials-block .lastBox {
   padding-top: 83.5px;
 }
+
 @media (max-width: 480px) {
   .Testimonials .testomonials-block .lastBox {
     padding-top: 38px;
   }
 }
+
 .Testimonials .testomonials-block .lastBox h3 {
   text-align: center;
   color: #000000;
@@ -691,6 +790,7 @@ main .background .text-block button:hover {
   letter-spacing: -2.4px;
   padding-bottom: 15px;
 }
+
 .Testimonials .testomonials-block .lastBox p {
   text-align: center;
   color: #000000;
@@ -702,6 +802,7 @@ main .background .text-block button:hover {
   letter-spacing: 0.1px;
   margin-bottom: 26.5px;
 }
+
 .Testimonials .testomonials-block .comments {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
@@ -709,11 +810,13 @@ main .background .text-block button:hover {
   padding: 0 25px 90px 25px;
   cursor: pointer;
 }
+
 .Testimonials .testomonials-block .comments .inner_card {
   background: #ffffff;
   border-radius: 6px;
   box-shadow: 0px 4px 24px 0px rgba(139, 167, 178, 0.16);
 }
+
 .Testimonials .testomonials-block .comments .inner_card .comment {
   padding: 32px 30px 26px 30px;
   display: flex;
@@ -721,9 +824,11 @@ main .background .text-block button:hover {
   justify-content: center;
   align-items: center;
 }
+
 .Testimonials .testomonials-block .comments .inner_card .comment img {
   min-width: 82px;
 }
+
 .Testimonials .testomonials-block .comments .inner_card .text {
   color: #1d293f;
   text-align: center;
@@ -733,6 +838,7 @@ main .background .text-block button:hover {
   font-weight: 500;
   line-height: 28.8px;
 }
+
 .Testimonials .testomonials-block .comments .inner_card .firstName {
   color: #7c8087;
   text-align: center;
@@ -747,6 +853,7 @@ main .background .text-block button:hover {
   background: #ffffff;
   width: 100%;
 }
+
 .footer-top .footer_menu {
   max-width: min(90%, 1260px);
   padding: 0 15px;
@@ -755,12 +862,14 @@ main .background .text-block button:hover {
   max-width: 1240px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 480px) {
   .footer-top .footer_menu {
     max-width: min(99%, 480px);
-    padding: 0 10px;
+    padding: 30px 10px;
   }
 }
+
 .footer-top .footer_menu ul {
   list-style: none;
   display: flex;
@@ -768,11 +877,13 @@ main .background .text-block button:hover {
   align-items: center;
   gap: 16px;
 }
+
 @media (max-width: 480px) {
   .footer-top .footer_menu ul {
     flex-wrap: wrap;
   }
 }
+
 .footer-top .footer_menu ul li {
   color: #000000;
   font-family: "Roboto", sans-serif;
@@ -782,6 +893,7 @@ main .background .text-block button:hover {
   line-height: 100%;
   white-space: nowrap;
 }
+
 .footer-top .footer_menu .social_media {
   display: flex;
   justify-content: center;
@@ -800,6 +912,7 @@ main .background .text-block button:hover {
   width: 100%;
   min-height: 55px;
 }
+
 .footer-bottom .last_container {
   color: #e8edde;
   text-align: center;
@@ -816,11 +929,13 @@ main .background .text-block button:hover {
 .plantKaufen {
   background: #e8edde;
 }
+
 .plantKaufen .plant-box {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
 }
+
 /* @media screen and (max-width: 480px) {
   .plantKaufen .plant-box {}
   } */
@@ -828,6 +943,7 @@ main .background .text-block button:hover {
 .upper-section {
   background-color: #e8edde;
 }
+
 .upper-section .upper-block {
   max-width: min(90%, 1260px);
   padding: 0 15px;
@@ -836,6 +952,7 @@ main .background .text-block button:hover {
   align-items: center;
   height: 184px;
 }
+
 @media screen and (max-width: 480px) {
   .upper-section .upper-block {
     max-width: min(99%, 480px);
@@ -848,23 +965,27 @@ main .background .text-block button:hover {
   justify-content: start;
   align-items: baseline;
 }
+
 @media screen and (max-width: 780px) {
   .plantKaufen .plant-box .newPlant {
     padding-right: 15%;
   }
 }
+
 .plantKaufen .plant-box .newPlant div {
   margin-left: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 780px) {
   .plantKaufen .plant-box .newPlant div {
     padding-left: 25%;
     padding-right: 3%;
   }
 }
+
 @media screen and (max-width: 480px) {
   .plantKaufen .plant-box .newPlant div {
     flex-direction: column;
@@ -872,6 +993,7 @@ main .background .text-block button:hover {
     padding-right: 10%;
   }
 }
+
 .plantKaufen .plant-box .newPlant div h1 {
   color: #000000;
   font-size: clamp(40px, 6vw, 80px);
@@ -883,6 +1005,7 @@ main .background .text-block button:hover {
   font-style: normal;
   font-weight: 400;
 }
+
 /* .plantKaufen .plant-box .newPlant div h1::after {
 } */
 .upper-section .upper-block .upper-box {
@@ -896,11 +1019,13 @@ main .background .text-block button:hover {
   gap: 20px;
   padding-left: 20px;
 }
+
 @media screen and (max-width: 780px) {
   .upper-section .upper-block .upper-box {
     padding-left: 20%;
   }
 }
+
 .upper-section .upper-block .upper-box h1 {
   font-size: clamp(40px, 6vw, 80px);
   line-height: 80px;
@@ -908,6 +1033,7 @@ main .background .text-block button:hover {
   font-family: "Poppins";
   font-weight: 400;
 }
+
 .upper-section .upper-block .upper-box h1::after {
   content: "";
   display: inline-block;
@@ -916,11 +1042,13 @@ main .background .text-block button:hover {
   background-color: #000000;
   margin-left: clamp(10px, 2vw, 35px);
 }
+
 @media screen and (max-width: 615px) {
   .plantKaufen .plant-box .newPlant div h1::after {
     display: none;
   }
 }
+
 .plantKaufen .plant-box .newPlant h5 {
   color: #000000;
   font-family: "Poppins";
@@ -934,20 +1062,25 @@ main .background .text-block button:hover {
   background: #ffffff;
   width: 100%;
 }
+
 .aboutPlant .plant-box {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 480px) {
   .aboutPlant .plant-box {
-  font-weight: 400;
-}}
+    font-weight: 400;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .upper-section .upper-block .upper-box h1::after {
     display: none;
   }
 }
+
 .upper-section .upper-block .upper-box p {
   font-size: clamp(14px, 4vw, 22px);
 }
@@ -959,6 +1092,7 @@ main .background .text-block button:hover {
   margin-top: 86px;
   margin-bottom: 121px;
 }
+
 @media screen and (max-width: 480px) {
   .main-content {
     max-width: min(99%, 480px);
@@ -970,6 +1104,7 @@ main .background .text-block button:hover {
   margin-top: 16px;
   margin-bottom: 90px;
 }
+
 .aboutPlant .plant-box .back a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
@@ -980,10 +1115,12 @@ main .background .text-block button:hover {
   line-height: normal;
   margin-bottom: 90px;
 }
+
 .aboutPlant .plant-box .plantList {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 1110px) {
   .aboutPlant .plant-box .plantList {
     display: grid;
@@ -991,6 +1128,7 @@ main .background .text-block button:hover {
     margin-right: 23%;
   }
 }
+
 .aboutPlant .plant-box .plantList .fotoPlants {
   width: 50%;
   display: grid;
@@ -999,6 +1137,7 @@ main .background .text-block button:hover {
   margin-right: 88px;
   position: relative;
 }
+
 @media (max-width: 600px) {
   .aboutPlant .plant-box .plantList .fotoPlants {
     display: grid;
@@ -1007,9 +1146,11 @@ main .background .text-block button:hover {
     margin-left: 8%;
   }
 }
+
 .aboutPlant .plant-box .plantList .fotoPlants img:last-child {
   position: relative;
 }
+
 .aboutPlant .plant-box .plantList .fotoPlants .zoom-icon {
   position: absolute;
   transform: translate(1240%, 1240%);
@@ -1019,20 +1160,24 @@ main .background .text-block button:hover {
   background-size: contain;
   cursor: pointer;
 }
+
 @media (max-width: 550px) {
   .aboutPlant .plant-box .plantList .fotoPlants .zoom-icon {
     transform: translate(525%, 2650%);
   }
 }
+
 .aboutPlant .plant-box .plantList .basketPlant {
   width: 50%;
 }
+
 @media (max-width: 1110px) {
   .aboutPlant .plant-box .plantList .basketPlant {
     margin-top: 30px;
     width: 80%;
   }
 }
+
 @media (max-width: 600px) {
   .aboutPlant .plant-box .plantList .basketPlant {
     margin-right: 10px;
@@ -1040,6 +1185,7 @@ main .background .text-block button:hover {
     margin-bottom: 50px;
   }
 }
+
 .aboutPlant .plant-box .plantList .basketPlant h2 {
   color: #000000;
   font-family: "Poppins";
@@ -1050,16 +1196,19 @@ main .background .text-block button:hover {
   letter-spacing: -1.5px;
   padding-bottom: 6px;
 }
+
 .aboutPlant .plant-box .plantList .basketPlant .price {
   color: #000000;
   font-family: "Open Sans";
   font-size: clamp(12px, 6vw, 18px);
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
+  /* 144.444% */
   letter-spacing: -0.3px;
   padding-bottom: 23px;
 }
+
 .aboutPlant .plant-box .plantList .basketPlant p {
   color: var(--Primary, #0d0d0d);
   font-family: "Open Sans";
@@ -1070,6 +1219,7 @@ main .background .text-block button:hover {
   letter-spacing: -0.4px;
   margin-bottom: 50px;
 }
+
 .aboutPlant .plant-box .plantList .choice::before {
   content: "Size";
   color: #000000;
@@ -1084,12 +1234,14 @@ main .background .text-block button:hover {
   position: absolute;
   transform: translateY(-115%);
 }
+
 .aboutPlant .plant-box .plantList .choice {
   display: flex;
   justify-content: start;
   gap: 8px;
   margin-bottom: 23px;
 }
+
 .aboutPlant .plant-box .plantList .choice .non-crossed-out-btn {
   border: 1px solid var(--Primary, #0d0d0d);
   background: none;
@@ -1098,6 +1250,7 @@ main .background .text-block button:hover {
   font-size: 16px;
   padding: 14px 18px;
 }
+
 .aboutPlant .plant-box .plantList .choice .diagonal-cross-btn {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -1108,6 +1261,7 @@ main .background .text-block button:hover {
   overflow: hidden;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .aboutPlant .plant-box .plantList .choice .diagonal-cross-btn::before {
   content: "";
   position: absolute;
@@ -1118,10 +1272,12 @@ main .background .text-block button:hover {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   transform: rotate(-45deg);
 }
+
 .aboutPlant .plant-box .product {
   display: flex;
   align-items: center;
 }
+
 .aboutPlant .plant-box .product .add-to-cart-btn {
   padding: 14px;
   width: 70%;
@@ -1140,11 +1296,13 @@ main .background .text-block button:hover {
   line-height: 22px;
   letter-spacing: -0.4px;
 }
+
 @media (max-width: 1110px) {
   .aboutPlant .plant-box .product .add-to-cart-btn {
     margin-top: 20px;
   }
 }
+
 .aboutPlant .plant-box .product .add-to-cart-btn::after {
   content: "Free standard shipping";
   color: #000000;
@@ -1159,6 +1317,7 @@ main .background .text-block button:hover {
   position: absolute;
   transform: translateY(125%);
 }
+
 .aboutPlant .plant-box .quantity::before {
   content: "Quantity";
   color: #000000;
@@ -1173,6 +1332,7 @@ main .background .text-block button:hover {
   position: absolute;
   transform: translateY(-184%);
 }
+
 .aboutPlant .plant-box .quantity {
   display: flex;
   align-items: center;
@@ -1180,17 +1340,20 @@ main .background .text-block button:hover {
   border: 1px solid #000000;
   padding: 10px 10px;
 }
+
 @media (max-width: 1110px) {
   .aboutPlant .plant-box .quantity {
     margin-top: 20px;
   }
 }
+
 @media (max-width: 600px) {
   .aboutPlant .plant-box .quantity {
     margin-right: 3%;
     margin-top: 20px;
   }
 }
+
 .aboutPlant .plant-box .quantity-btn {
   padding: 4px 8px;
   background-color: #ffffff;
@@ -1200,6 +1363,7 @@ main .background .text-block button:hover {
   cursor: pointer;
   font-size: 18px;
 }
+
 .aboutPlant .plant-box .quantity-value {
   padding: 0 8px;
 }
@@ -1208,20 +1372,24 @@ main .background .text-block button:hover {
   background: #e8edde;
   margin-top: 100px;
 }
+
 .care .plant-box {
   max-width: min(90%, 1260px);
   padding: 0 15px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 480px) {
   .care .plant-box {
     max-width: min(99%, 480px);
     padding: 0 10px;
   }
 }
+
 .care .plant-box .boxSidebar {
   display: flex;
 }
+
 .care .plant-box .boxSidebar .sidebar {
   width: 25%;
   min-height: 420px;
@@ -1236,33 +1404,40 @@ main .background .text-block button:hover {
   color: #000000;
   position: relative;
 }
+
 @media screen and (max-width: 650px) {
   .care .plant-box .boxSidebar .sidebar {
     padding-right: 30px;
     width: 140px;
   }
 }
+
 .care .plant-box .boxSidebar .sidebar .menu {
   list-style: none;
   padding: 0;
 }
+
 .care .plant-box .boxSidebar .sidebar .menu .has-submenu {
   text-decoration: none;
 }
+
 .care .plant-box .boxSidebar .sidebar .menu .has-submenu a {
   text-decoration: none;
   list-style: none;
 }
+
 .care .plant-box .boxSidebar .sidebar .menu a {
   text-decoration: none;
   color: #000000;
   display: block;
   padding: 8px 0;
 }
+
 .care .plant-box .boxSidebar .sidebar .menu a:hover {
   color: #50806b;
   font-size: clamp(16px, 7vw, 20px);
 }
+
 .care .plant-box .boxSidebar .sidebar .menu .submenu {
   display: none;
   list-style: none;
@@ -1276,18 +1451,22 @@ main .background .text-block button:hover {
   letter-spacing: 0.352px;
   text-transform: capitalize;
 }
+
 .care .plant-box .boxSidebar .sidebar .menu .submenu.active {
   display: block;
 }
+
 .care .plant-box .content {
   flex: 1;
   padding: 24px;
 }
+
 .care .plant-box .content .content-box {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
+
 .care .plant-box .content .content-box h2 {
   color: #343434;
   font-family: "Poppins";
@@ -1297,22 +1476,26 @@ main .background .text-block button:hover {
   line-height: normal;
   padding-bottom: 22px;
 }
+
 .care .plant-box .content .content-box p {
   color: var(--Primary, #0D0D0D);
   font-family: "Open Sans";
   font-size: clamp(12px, 4vw, 20px);
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
+  /* 140% */
   letter-spacing: -0.4px;
   padding-bottom: 15px;
 }
+
 @media (max-width: 900px) {
   .main-content {
     margin-top: 42px;
     margin-bottom: 60px;
   }
 }
+
 .main-content .popular-product {
   display: flex;
   flex-direction: column;
@@ -1323,22 +1506,26 @@ main .background .text-block button:hover {
   font-size: 14px;
   margin-bottom: 7px;
 }
+
 @media (max-width: 1200px) {
   .main-content .popular-product {
     padding-right: 7%;
   }
 }
+
 @media (max-width: 900px) {
   .main-content .popular-product {
     align-items: start;
     padding-left: 2%;
   }
 }
+
 @media (max-width: 480px) {
   .main-content .popular-product {
     align-items: center;
   }
 }
+
 .main-content .popular-product div {
   display: flex;
   align-items: center;
@@ -1346,47 +1533,57 @@ main .background .text-block button:hover {
   line-height: 26px;
   letter-spacing: -0.3px;
 }
+
 .main-content .popular-product div p:nth-child(1) {
   font-weight: 400;
   opacity: 0.5;
 }
+
 .main-content .popular-product div p:nth-child(2) {
   font-weight: 700;
 }
+
 .main-content .popular-product div img {
   cursor: pointer;
 }
+
 .main-content .popular-product p {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.4px;
 }
+
 .main-content .main-block {
   display: flex;
   justify-content: space-between;
 }
+
 @media (max-width: 1200px) {
   .main-content .main-block {
     gap: 20px;
   }
 }
+
 @media (max-width: 480px) {
   .main-content .main-block {
     flex-direction: column;
     align-items: center;
   }
 }
+
 .main-content .main-block .sidebar {
   color: #343434;
   font-family: "Open Sans";
   width: 20%;
   min-width: 190px;
 }
+
 @media (max-width: 480px) {
   .main-content .main-block .sidebar {
     width: 242px;
   }
 }
+
 .main-content .main-block .sidebar .all-categories {
   margin-bottom: 19px;
   border-radius: 10px;
@@ -1397,6 +1594,7 @@ main .background .text-block button:hover {
   padding: 16px 18px 10px;
   white-space: nowrap;
 }
+
 .main-content .main-block .sidebar .all-categories .menu-categories {
   display: flex;
   align-items: center;
@@ -1407,25 +1605,31 @@ main .background .text-block button:hover {
   margin-bottom: 7px;
   cursor: pointer;
 }
+
 .main-content .main-block .sidebar .all-categories .menu-categories :hover {
   color: #50806b;
   font-size: 17px;
 }
+
 .main-content .main-block .sidebar .all-categories .menu-categories p:nth-child(1) {
   font-size: clamp(14px, 2vw, 20px);
   margin-bottom: 2px;
 }
+
 .main-content .main-block .sidebar .all-categories .menu-categories p:nth-child(2) {
   font-size: clamp(12px, 3vw, 14px);
   opacity: 0.6;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu {
   display: none;
   flex-direction: column;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-indoor {
   flex-direction: column;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-indoor .indoor-box {
   display: flex;
   align-items: center;
@@ -1438,9 +1642,11 @@ main .background .text-block button:hover {
   letter-spacing: 0.352px;
   cursor: pointer;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-indoor .indoor-box :hover {
   color: #50806b;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul {
   display: none;
   flex-direction: column;
@@ -1453,13 +1659,16 @@ main .background .text-block button:hover {
   letter-spacing: 0.352px;
   text-transform: capitalize;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul :hover {
   color: #50806b;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul li {
   margin-bottom: 16px;
   cursor: pointer;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-indoor ul li div {
   display: flex;
   align-items: center;
@@ -1467,6 +1676,7 @@ main .background .text-block button:hover {
   font-weight: 600;
   cursor: pointer;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-outdoor,
 .main-content .main-block .sidebar .all-categories .block-menu .menu-sun {
   font-size: clamp(14px, 1vw, 16px);
@@ -1479,10 +1689,12 @@ main .background .text-block button:hover {
   white-space: nowrap;
   cursor: pointer;
 }
+
 .main-content .main-block .sidebar .all-categories .block-menu .menu-outdoor :hover,
 .main-content .main-block .sidebar .all-categories .block-menu .menu-sun :hover {
   color: #50806b;
 }
+
 .main-content .main-block .sidebar .price {
   display: flex;
   justify-content: space-between;
@@ -1497,9 +1709,11 @@ main .background .text-block button:hover {
   margin-bottom: 21px;
   cursor: pointer;
 }
+
 .main-content .main-block .sidebar .price:hover {
   color: #50806b;
 }
+
 .main-content .main-block .sidebar .include {
   border-radius: 10px;
   border: 1px solid #e3e5e5;
@@ -1507,16 +1721,20 @@ main .background .text-block button:hover {
   padding: 23px 40px 12px 24px;
   font-size: clamp(14px, 2vw, 16px);
 }
+
 .main-content .main-block .sidebar .include p {
   margin-bottom: 8px;
 }
+
 .main-content .main-block .sidebar .include .radio-container {
   margin-bottom: 4px;
 }
+
 .main-content .main-block .sidebar .include .radio-container label:hover {
   color: #50806b;
   cursor: pointer;
 }
+
 .main-content .main-block .products-card {
   width: 73%;
   display: flex;
@@ -1525,6 +1743,7 @@ main .background .text-block button:hover {
   flex-wrap: wrap;
   gap: 24px;
 }
+
 .main-content .main-block .products-card div {
   max-width: 30%;
   display: flex;
@@ -1537,6 +1756,7 @@ main .background .text-block button:hover {
   font-family: "Open Sans";
   font-size: clamp(12px, 3vw, 20px);
 }
+
 @media (max-width: 1200px) {
   .main-content .main-block .products-card div {
     max-width: 242px;
@@ -1544,26 +1764,32 @@ main .background .text-block button:hover {
     margin: auto;
   }
 }
+
 @media (max-width: 940px) {
   .main-content .main-block .products-card div {
     max-width: 220px;
   }
 }
+
 @media (max-width: 900px) {
   .main-content .main-block .products-card div {
     max-width: 100%;
   }
 }
+
 .main-content .main-block .products-card div p:nth-child(1) {
   font-weight: 400;
 }
+
 .main-content .main-block .products-card div p:nth-child(2) {
   font-weight: 700;
 }
+
 .main-content .main-block .products-card div img {
   width: 100%;
   height: auto;
 }
+
 .main-content .main-block .products-card div button {
   width: 100%;
   padding: 17px 0;
@@ -1578,12 +1804,16 @@ main .background .text-block button:hover {
   white-space: nowrap;
   cursor: pointer;
 }
+
 .main-content .main-block .products-card div button:hover {
   background: #406856;
   box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
 }
+
 @media (max-width: 580px) {
   .main-content .main-block .products-card div button {
     padding: 10px 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

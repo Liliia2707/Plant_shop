@@ -3,9 +3,8 @@
 .footer-top {
   background: variables.$fourth-color;
   width: 100%;
-  @include variables.content-container;
-
   .footer_menu {
+    @include variables.content-container;
     padding: 48px 80px;
     max-width: 1240px;
     cursor: pointer;
@@ -27,8 +26,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 100%;
-        white-space: nowrap; 
-        
+        white-space: nowrap;
       }
     }
 
@@ -41,4 +39,7 @@
       cursor: pointer;
     }
   }
+}
+#grey-background {
+  background: variables.$main-bg-color;
 }

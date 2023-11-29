@@ -1,0 +1,248 @@
+@use "variables";
+
+.main-content {
+  @include variables.content-container;
+  margin-top: 86px;
+  margin-bottom: 121px;
+  @media (max-width: 900px) {
+    margin-top: 42px;
+    margin-bottom: 60px;
+  }
+  .popular-product {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 9px;
+    color: variables.$first-color;
+    font-family: variables.$first-font;
+    font-size: 14px;
+    margin-bottom: 7px;
+    @media (max-width: 1200px) {
+      padding-right: 7%;
+    }
+    @media (max-width: 900px) {
+      align-items: start;
+      padding-left: 2%;
+    }
+    @media (max-width: 480px) {
+      align-items: center;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      line-height: 26px;
+      letter-spacing: -0.3px;
+
+      p:nth-child(1) {
+        font-weight: 400;
+        opacity: 0.5;
+      }
+      p:nth-child(2) {
+        font-weight: 700;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+    p {
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.4px;
+    }
+  }
+  .main-block {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1200px) {
+      gap: 20px;
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar {
+      color: variables.$third-color;
+      font-family: variables.$first-font;
+      width: 20%;
+      min-width: 190px;
+      @media (max-width: 480px) {
+        width: 242px;
+      }
+      .all-categories {
+        margin-bottom: 19px;
+        border-radius: 10px;
+        border: 1px solid #e3e5e5;
+        box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+        display: flex;
+        flex-direction: column;
+        padding: 16px 18px 10px;
+        white-space: nowrap;
+
+        .menu-categories {
+          display: flex;
+          align-items: center;
+          gap: 17px;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0.55px;
+          margin-bottom: 7px;
+          cursor: pointer;
+          @include hover($second-color);
+
+          p:nth-child(1) {
+            font-size: clamp(14px, 2vw, 20px);
+            margin-bottom: 2px;
+          }
+          p:nth-child(2) {
+            font-size: clamp(12px, 3vw, 14px);
+            opacity: 0.6;
+          }
+        }
+        .block-menu {
+          display: none;
+          flex-direction: column;
+          .menu-indoor {
+            flex-direction: column;
+
+            .indoor-box {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              padding-left: 9px;
+              padding-bottom: 16px;
+              font-size: clamp(14px, 2vw, 16px);
+              font-weight: 600;
+              line-height: 150%;
+              letter-spacing: 0.352px;
+              cursor: pointer;
+              @include hover($second-color);
+            }
+            ul {
+              display: none;
+              flex-direction: column;
+              font-size: clamp(14px, 2vw, 16px);
+              list-style: none;
+              padding-left: 34px;
+              color: variables.$third-color;
+              font-weight: 400;
+              line-height: 150%;
+              letter-spacing: 0.352px;
+              text-transform: capitalize;
+              @include hover($second-color);
+              li {
+                margin-bottom: 16px;
+                cursor: pointer;
+                div {
+                  display: flex;
+                  align-items: center;
+                  gap: 7px;
+                  font-weight: 600;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          .menu-outdoor,
+          .menu-sun {
+            font-size: clamp(14px, 1vw, 16px);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 18px;
+            padding-left: 9px;
+            font-weight: 600;
+            white-space: nowrap;
+            cursor: pointer;
+            @include hover($second-color);
+          }
+        }
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        border: 1px solid #e3e5e5;
+        box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+        padding: 18px 24px;
+        font-size: clamp(14px, 2vw, 16px);
+        font-weight: 700;
+        letter-spacing: 0.75px;
+        text-transform: capitalize;
+        margin-bottom: 21px;
+        cursor: pointer;
+        @include hover($second-color);
+      }
+
+      .include {
+        border-radius: 10px;
+        border: 1px solid #e3e5e5;
+        box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+        padding: 23px 40px 12px 24px;
+        font-size: clamp(14px, 2vw, 16px);
+        p {
+          margin-bottom: 8px;
+        }
+        .radio-container {
+          margin-bottom: 4px;
+
+          label {
+            @include hover($second-color);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .products-card {
+      width: 73%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+
+      div {
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 16px;
+        gap: 16px;
+        box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+        color: variables.$third-color;
+        font-family: variables.$first-font;
+        font-size: clamp(12px, 3vw, 20px);
+        @media (max-width: 1200px) {
+          max-width: 242px;
+          gap: 5px;
+          margin: auto;
+        }
+        @media (max-width: 940px) {
+          max-width: 220px;
+        }
+        @media (max-width: 900px) {
+          max-width: 100%;
+        }
+
+        p:nth-child(1) {
+          font-weight: 400;
+        }
+        p:nth-child(2) {
+          font-weight: 700;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        button {
+          @include variables.button;
+          @media (max-width: 580px) {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

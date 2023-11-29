@@ -18,15 +18,25 @@ $second-font: "Poppins";
 
 @mixin button {
   width: 100%;
-  padding: 18px 0;
+  padding: 17px 0;
   border-radius: 8px;
-  background:  #50806b;
+  background: #50806b;
   box-shadow: 2 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: clamp(12px, 5vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
+  &:hover {
+    background: #406856;
+    box-shadow: 2px 2px 8px 5px rgba(80, 107, 82, 0.25);
+  }
+}
+
+@mixin hover($hover-color) {
+  &:hover {
+    color: $hover-color;
+  }
 }
